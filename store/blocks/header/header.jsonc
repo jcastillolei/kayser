@@ -7,10 +7,10 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "flex-layout.row#1-desktop", //televentas
+      "flex-layout.row#2-desktop", //top-menu
+      "flex-layout.row#3-desktop", //navbar
+      "flex-layout.row#4-desktop" //despachos
     ]
   },
 
@@ -21,7 +21,7 @@
     }
   },
 
-  "flex-layout.row#2-desktop": {
+  "flex-layout.row#4-desktop": {
     "children": ["notification.bar#home"],
     "props": {
       "fullWidth": "true"
@@ -29,21 +29,21 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "Despacho gratis a RM sobre $25.000 / Te faltan $25000 en tu carrito"
     }
   },
-  "flex-layout.row#3-desktop": {
+  "flex-layout.row#2-desktop": {
     "props": {
-      "blockClass": "menu-link",
+      "blockClass": "top-menu",
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
+    "children": [      
+      "vtex.menu@2.x:menu#institutional",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "vtex.menu@2.x:menu#websites"
     ]
   },
   "flex-layout.col#spacer": {
@@ -51,15 +51,9 @@
       "width": "grow"
     }
   },
-  "sticky-layout#4-desktop": {
+  "flex-layout.row#3-desktop": {
     "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
+      "blockClass": "navbar",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -68,10 +62,11 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ]
@@ -92,8 +87,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000C8F/es-PE/images/logo/logo.png",
+      "width": "110"
     }
   },
   "header-layout.mobile": {
@@ -111,7 +106,7 @@
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "navbar-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -123,9 +118,9 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      // "menu-item#category-apparel",
+      // "menu-item#category-home",
+      // "menu-item#more"
     ],
     "props": {
       "orientation": "vertical"

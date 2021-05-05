@@ -1,45 +1,99 @@
-.flexRowContent--menu-link,
-.flexRowContent--main-header {
+.flexRowContent--top-menu,
+.flexRowContent--navbar {
   padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--top-menu,
+  .flexRowContent--navbar {
     padding: 0 1rem;
   }
 }
 @media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--top-menu,
+  .flexRowContent--navbar {
     padding: 0 0.25rem;
   }
 }
 
-.flexRowContent--menu-link {
-  background-color: #03044e;
-  color: #fff;
+.flexRow--top-menu{
+  background: linear-gradient(45deg, rgb(212, 0, 89) 10%, rgb(244, 244, 244) 72%);
 }
 
-.flexRowContent--main-header {
+.flexRowContent--top-menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: .7rem 0;
+  width: 90%;
+}
+
+.flexRowContent--navbar{
+  align-items: center;
   background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
-
-.flexRowContent--main-header-mobile {
+.flexRowContent--navbar-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
   background-color: #f0f0f0;
 }
 
-.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
-  font-size: 14px;
+.flexRowContent--top-menu :global(.vtex-menu-2-x-styledLinkContainer){
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.flexRowContent--top-menu :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.flexRowContent--top-menu :global(.vtex-menu-2-x-styledLink) {
+  color: #4d4d4d;
+  font-size: 11px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.flexRowContent--top-menu :global(.vtex-menu-2-x-styledLinkContent){
+  padding: 0 .6rem;
+  border-right: 2px solid #8e8e8e;
+}
+.flexRowContent--top-menu :global(.vtex-menu-2-x-menuItem):first-child :global(.vtex-menu-2-x-styledLinkContent){
+  border-left: 2px solid #8e8e8e;
+}
+.flexRowContent--navbar :global(.vtex-menu-2-x-styledLink) {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
-  font-size: 14px;
+.flexRowContent--navbar :global(.vtex-menu-2-x-styledLinkContent){
+  align-items: center;
 }
+
+.flexRowContent--navbar :global(.vtex-menu-2-x-menuItem){
+  align-self: center;
+}
+
+.flexRowContent--navbar :global(.vtex-menu-2-x-styledLinkContent--para-ti)::before {
+  content:'';
+  clear:both;
+  height: 23px;;
+  width:35px;
+  display:inline-block;
+  background-image: url(https://kayserltda.vteximg.com.br/arquivos/kayserparati_ico.gif?v=637534287903970000);
+  background-size:100%;
+}
+
+.flexRowContent--top-menu :global(.vtex-menu-2-x-styledLink):hover,
+.flexRowContent--navbar :global(.vtex-menu-2-x-styledLink):hover{
+  color: #8e8e8e;
+}
+
 .flexRow--deals {
   background-color: #a7afbd;
   padding: 14px 0px;

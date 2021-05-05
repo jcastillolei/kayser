@@ -6,7 +6,25 @@
 }
 
 .sliderTrackContainer {
-  max-width: 1520px;
+  max-width: 1920px;
+}
+
+.sliderLayoutContainer--carousel
+.sliderArrows--carousel{
+  background: #2a86e4 !important;
+  border-radius: 50%;
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.sliderLayoutContainer--carousel
+.sliderLeftArrow--carousel{
+  left: 30px;
+}
+.sliderLayoutContainer--carousel
+.sliderRightArrow--carousel{
+  right: 30px;
 }
 
 .paginationDotsContainer {

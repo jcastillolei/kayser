@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500&display=swap');
+
 /* add transitions */
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-store-components-3-x-logoLink),
@@ -10,23 +12,22 @@
 }
 
 /* desktop/mobile main header padding and background transitions */
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar),
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile) {
   transition: background 0.3s ease;
   will-change: padding, background;
 }
 
 /* main header desktop has a bigger padding when not stuck */
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar) {
+  background-color: white;
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-flex-layout-0-x-flexRowContent--navbar),
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile) {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,7 +36,7 @@
  * we add a transition only when "stuck" for the "unstick" step seem faster
  */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--navbar) {
   transition: padding 0.3s ease, background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
@@ -44,17 +45,17 @@
 /* if supported add some translucency to the desktop/mobile header background */
 @supports (backdrop-filter: blur(5px)) {
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+    :global(.vtex-flex-layout-0-x-flexRowContent--navbar),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile) {
     backdrop-filter: blur(8px);
   }
 
   /* header background when stuck and not hovered */
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+    :global(.vtex-flex-layout-0-x-flexRowContent--navbar),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile) {
     background: rgba(240, 240, 240, 0.8);
   }
 }
@@ -78,7 +79,54 @@
   :global(.vtex-sticky-layout-0-x-container)
     :global(.vtex-store-components-3-x-searchBarContainer),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--navbar) {
     transition: none;
   }
+}
+
+/* search bar */
+:global(.vtex-store-components-3-x-searchBarContainer){
+  align-self: center;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input-prefix__group){
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #ccc;
+  border-right: none;
+  height: 25px;
+  width: 200px;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input-prefix__group)
+:global(.vtex-styleguide-9-x-input){
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input-prefix__group)
+:global(.vtex-styleguide-9-x-input)::placeholder{
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 500 !important;
+}
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input-prefix__group)
+:global(.vtex-input__suffix){
+  background-color: #2a86e4;
+  border-radius: 0 3px 3px 0;
+  padding-left: .5rem;
+  padding-right: 0rem;
+}
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input-prefix__group)
+:global(.vtex-input__suffix)
+:global(.vtex-store-components-3-x-searchIcon){
+  color: white;
+  width: 12px;
 }

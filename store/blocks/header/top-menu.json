@@ -1,13 +1,17 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#seguimiento",
+      "menu-item#quiero-promotora",
+      "menu-item#soy-promotora",
+      "menu-item#tiendas",
+      "menu-item#faq",
+      "menu-item#contacto"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#seguimiento": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-seguimiento",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,8 +19,83 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "pedidos",
+        "text": "Sigue tu Pedido"
+      }
+    }
+  },
+  "menu-item#quiero-promotora": {
+    "props": {
+      "id": "menu-item-quieroserpromotora",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "quiero-promotora",
+        "text": "Quiero ser Promotora"
+      }
+    }
+  },
+  "menu-item#soy-promotora": {
+    "props": {
+      "id": "menu-item-soypromotora",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "soypromotora",
+        "text": "Ya soy Promotora"
+      }
+    }
+  },
+  "menu-item#tiendas": {
+    "props": {
+      "id": "menu-item-tiendas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "tiendas",
+        "text": "Tiendas"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "faq",
+        "text": "Preguntas Frecuentes"
+      }
+    }
+  },
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "contacto",
+        "text": "Contacto"
       }
     }
   },
@@ -36,7 +115,7 @@
         "href": "http://vtex.com",
         "noFollow": false,
         "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "text": "texto"
       }
     }
   }

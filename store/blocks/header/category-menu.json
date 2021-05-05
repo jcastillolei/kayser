@@ -4,12 +4,15 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#arma-pack",
+      "menu-item#mujer",
+      "menu-item#hombre",
+      "menu-item#kids",
+      "menu-item#otras",
+      "menu-item#para-ti"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#arma-pack": {
     "props": {
       "id": "menu-item-category-apparel",
       "type": "custom",
@@ -20,7 +23,7 @@
         "href": "/apparel---accessories/",
         "noFollow": false,
         "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "text": "Arma tu Pack"
       }
     },
     "blocks": [
@@ -90,7 +93,7 @@
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#mujer": {
     "props": {
       "id": "menu-item-category-home",
       "type": "custom",
@@ -100,12 +103,12 @@
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "mujer",
+        "text": "Mujer"
       }
     }
   },
-  "menu-item#more": {
+  "menu-item#hombre": {
     "props": {
       "id": "menu-item-custom-sale",
       "type": "custom",
@@ -115,8 +118,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "hombre",
+        "text": "Hombre"
       }
     },
     "blocks": [
@@ -198,6 +201,55 @@
         "noFollow": true,
         "tagTitle": "Contact Us",
         "text": "Contact Us"
+      }
+    }
+  },
+
+  "menu-item#kids": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "kids",
+        "text": "Teen & Kids"
+      }
+    }
+  },
+
+  "menu-item#otras": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "otras",
+        "text": "Otras\nCategorias"
+      }
+    }
+  },
+
+  "menu-item#para-ti": {
+    "props": {
+      "id": "menu-item-category-home",
+      "blockClass": "para-ti",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "para-ti",
+        "text": "Kayser Para Ti"
       }
     }
   }

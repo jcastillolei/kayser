@@ -1,9 +1,12 @@
 .notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+  background-image: url(https://kayserltda.vteximg.com.br/arquivos/fondo-bottonBar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-weight: 900;
+  font-size: 11px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .infoCardContainer--info-card-home {
