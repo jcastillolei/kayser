@@ -43,3 +43,71 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+/* p r o d u c t o s   r e c o m e n d a d o s */
+.sliderLayoutContainer--shelf
+.slide--shelf
+.slideChildrenContainer--shelf
+:global(.vtex-product-summary-2-x-element){
+  padding-top: 0px;
+}
+
+.sliderLayoutContainer--shelf
+.slide--shelf
+.slideChildrenContainer--shelf
+:global(.vtex-product-summary-2-x-element)
+:global(.vtex-product-summary-2-x-imageStackContainer)::before{
+  background: rgba(0, 0, 0, 0.045);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.sliderLayoutContainer--shelf
+.slide--shelf
+.slideChildrenContainer--shelf{
+  background-color: #f2f2f2;
+  border: 1px solid rgba(204, 204, 204, 0.9);
+}
+
+.sliderLayoutContainer--shelf
+.slide--shelf
+:global(.vtex-product-summary-2-x-brandName){
+  color: #2E2E2E;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sliderLayoutContainer--shelf
+.slide--shelf
+:global(.vtex-product-price-1-x-listPriceValue--summary){
+  color: #999;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sliderLayoutContainer--shelf
+.slide--shelf
+:global(.vtex-product-price-1-x-sellingPriceValue--summary){
+  color: #ff0000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.sliderLayoutContainer--shelf
+.slide--shelf
+:global(.vtex-button){
+  background-color: #2a86e4;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+

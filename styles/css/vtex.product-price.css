@@ -31,17 +31,23 @@
 }
 
 .savings--summary {
-  background: #8BC34A;
-  border-radius: 1000px;
   align-items: center;
-  display: flex;
-
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  vertical-align: baseline;
+  background: #efba00;
+  border-radius: 0;
+  box-shadow: -3px 3px #845ea5;
   color: #FFFFFF;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 800;
+  height: 16px;
+  padding: .3rem 0 .1rem 0;
+  right: 15px;
+  justify-content: center;
+  top: 5px;
+  vertical-align: baseline;
+  width: 40px;
 }
 
 .savings-discount--summary {

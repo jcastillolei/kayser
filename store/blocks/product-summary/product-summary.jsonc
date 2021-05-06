@@ -3,12 +3,10 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
+      "add-to-cart-button#comprar"
     ]
   },
   "flex-layout.col#productRating": {
@@ -29,8 +27,7 @@
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
+      "aspectRatio": "7:10"
     }
   },
 
@@ -84,7 +81,15 @@
       "markers": [
         "discount"
       ],
-      "blockClass": "summary"
+      "blockClass": "summary",
+      "message": "{savingsPercentage}"
+    }
+  },
+  "add-to-cart-button#comprar":{
+    "props": {
+      "onClickBehavior": "go-to-product-page",
+      "text": "Comprar",
+      "unavailableText": "No Disponible"
     }
   }
 }

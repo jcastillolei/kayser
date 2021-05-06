@@ -1,8 +1,8 @@
 {
   "modal-trigger#quickview": {
     "children": [
-      "icon-expand",
-      "modal-layout#quickview"
+     
+
     ],
     "props": {
       "blockClass": "quickview"
