@@ -5,13 +5,12 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
       "rich-text#shelf-title-recomendados",
       "flex-layout.row#shelf-recomendados",
       "info-card#home",
       "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#deals",
+      "rich-text#link"
     ]
   },
 
@@ -44,7 +43,16 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "slideTransition": { 
+        "speed": 0,
+        "delay": 1000,
+        "timing": "linear"
+      },
+      "autoplay": {
+        "timeout": 5000
+      },
+      "showPaginationDots": "never"
     }
   },
 

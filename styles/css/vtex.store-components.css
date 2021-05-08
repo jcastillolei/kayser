@@ -16,19 +16,16 @@
   padding: 0px;
 }
 
-.newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
-}
-
-.newsletter .container {
-  padding: 60px 10px;
-}
-
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
 .label {
-  color: #fff;
-  font-size: 26px;
+  color: #666;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  width: 60%;
+  white-space: break-spaces;
 }
 
 .inputGroup {
@@ -69,13 +66,6 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
-
-  .label {
-    font-size: 40px;
-  }
 
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;

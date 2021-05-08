@@ -11,40 +11,32 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
+      "newsletter",
       "footer-spacer",
-      "social-networks"
+      "vtex.menu@2.x:menu#info-kayser",
+      "footer-spacer",
+      "vtex.menu@2.x:menu#servicio-cliente",
+      "footer-spacer",
+      "vtex.menu@2.x:menu#rrss",
+      "footer-spacer",
+      "vtex.menu@2.x:menu#catalogo"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "menu-footer",
+      "paddingTop": 0,
+      "paddingBottom": 0
     }
   },
-
-  "social-networks": {
+  "footer-spacer":{
     "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "width": "7%"
+    }
+  },
+  "newsletter":{
+    "props":{
+      "label": "Suscríbete al Newsletter",
+      "placeholder": "Ingrese su e-mail",
+      "submit": "Enviar"
     }
   },
 

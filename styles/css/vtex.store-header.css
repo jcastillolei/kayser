@@ -120,8 +120,12 @@
 :global(.vtex-input__suffix){
   background-color: #2a86e4;
   border-radius: 0 3px 3px 0;
+  bottom: 0px;
+  height: 25px;
   padding-left: .5rem;
   padding-right: 0rem;
+  position: absolute;
+  right: -26px;
 }
 :global(.vtex-store-components-3-x-searchBarContainer)
 :global(.vtex-input-prefix__group)
@@ -129,4 +133,39 @@
 :global(.vtex-store-components-3-x-searchIcon){
   color: white;
   width: 12px;
+}
+
+
+/* i c o n  c a r t */
+:global(.vtex-flex-layout-0-x-flexRow--navbar)
+:global(.vtex-minicart-2-x-minicartWrapperContainer)
+:global(.vtex-minicart-2-x-openIconContainer){
+  padding: 0px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--navbar)
+:global(.vtex-minicart-2-x-minicartWrapperContainer)
+:global(.vtex-button){
+  background: transparent;
+}
+:global(.vtex-flex-layout-0-x-flexRow--navbar)
+:global(.vtex-minicart-2-x-minicartWrapperContainer)
+:global(.vtex-store-icons-0-x-cartIcon){
+  color: #4d4d4d;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--navbar)
+:global(.vtex-minicart-2-x-minicartWrapperContainer)
+:global(.vtex-store-icons-0-x-cartIcon):hover{
+  color: #8e8e8e;
+}
+
+:global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  height: 14px;
+  padding: 0;
+  right: -0.4rem;
+  top: -0.6rem;
+  width: 14px; 
 }

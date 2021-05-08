@@ -1,9 +1,149 @@
-.row--menu-row {
+.row--menu-footer {
   padding-right: 24px;
 }
 
-.row--menu-row .rowContainer {
+.row--menu-footer .rowContainer {
   align-items: flex-start;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer){
+  background: #f4f4f4;
+  padding: 2.5rem 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-footer){
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-container){
+  justify-content: space-between;
+  width: 80%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-store-components-3-x-container){
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-store-components-3-x-container){
+  padding-bottom: 0;
+  padding-top:0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-store-components-3-x-form){
+  text-align: left;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-button){
+  background: #2a86e4;
+  border-radius: 0;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  min-height: 30px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-input__error){
+  font-family: 'Raleway', sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+  margin-bottom: .4rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-button__label){
+  justify-content: left;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-input-prefix__group){
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  margin-bottom: .5rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-styleguide-9-x-input)::placeholder{
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-style: italic;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-styleguide-9-x-input){
+  padding-left: 0;
+  padding-right: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-store-components-3-x-inputGroup){
+  display: block;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-store-components-3-x-buttonContainer){
+  padding-left: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-styledLinkContent){
+  align-items: center;
+  color: #4d4d44;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  justify-content: start;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-styledLinkContent):hover{
+  color: #8e8e8e;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-menuItem--menu-title)
+:global(.vtex-menu-2-x-styledLinkContent){
+  color: #666;
+  cursor: default;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15.6px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  white-space: break-spaces;
+  width: 60%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-footer)
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-menuItem--menu-title)
+:global(.vtex-menu-2-x-styledLinkContainer--menu-title){
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .row--payment-methods {

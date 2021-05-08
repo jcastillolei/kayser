@@ -67,9 +67,58 @@
       "flex-layout.col#spacer",
       "search-bar",
       "flex-layout.col#spacer",
-      "login",
+      "menu-item#orders",
+      "menu-item#account",
       "minicart.v2"
     ]
+  },
+  "menu-item#orders": {
+    "props": {
+      "id": "menu-item-orders",
+      "blockClass": "orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-order",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/account#/orders",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#account": {
+    "props": {
+      "id": "menu-item-orders",
+      "blockClass": "orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/account#/orders",
+        "noFollow": false
+      }
+    }
+  },
+  "minicart.v2":{
+    "props": {
+      "MinicartIcon": "icon-cart#minicart-icon"
+    }
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "id": "hpa-cart",
+      "size": 16,
+      "viewBox": "0 0 24 16"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {

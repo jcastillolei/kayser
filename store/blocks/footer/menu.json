@@ -1,33 +1,33 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  "vtex.menu@2.x:menu#info-kayser": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "menu-item#informacion",
+      "menu-item#empresa",
+      "menu-item#politica-devolucion",
+      "menu-item#politica-envio",
+      "menu-item#terminos",
+      "menu-item#tiendas"
     ]
   },
-  "menu-item#news": {
+  "menu-item#informacion": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-item-informacion",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "menu-title",
       "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Info Kayser",
+        "text": "Información Kayser"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#empresa": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-empresa",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -35,14 +35,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Empresa",
+        "text": "Empresa"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#politica-devolucion": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-politica-devolucion",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -50,14 +50,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "política devolucion",
+        "text": "Política de devolución"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#politica-envio": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-politica-envio",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -65,42 +65,73 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Política de envío",
+        "text": "Política de envío"
+      }
+    }
+  },
+  "menu-item#terminos": {
+    "props": {
+      "id": "menu-item-terminos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Terminos",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#tiendas": {
+    "props": {
+      "id": "menu-item-tiendas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tiendas",
+        "text": "Tiendas"
       }
     }
   },
 
-  "vtex.menu@2.x:menu#footer-decoration": {
+  "vtex.menu@2.x:menu#servicio-cliente": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#servicio",
+      "menu-item#contactenos",
+      "menu-item#quiero-ser",
+      "menu-item#como-comprar",
+      "menu-item#contactanos",
+      "menu-item#numero-contacto"
     ]
   },
 
-  "menu-item#smartphones": {
+  "menu-item#servicio": {
     "props": {
-      "id": "menu-item-smartphones",
+      "id": "menu-item-servicio",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "menu-title",
       "itemProps": {
-        "type": "internal",
-        "href": "/decoration/smartphones",
-        "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "tagTitle": "Servicio al Cliente",
+        "text": "Servicio al Cliente"
       }
     }
   },
 
-  "menu-item#videogames": {
+  "menu-item#contactenos": {
     "props": {
-      "id": "menu-item-videogames",
+      "id": "menu-item-contactenos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -108,15 +139,15 @@
         "type": "internal",
         "href": "/decoration/videogames",
         "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
+        "tagTitle": "Contáctenos",
+        "text": "Contáctenos"
       }
     }
   },
 
-  "menu-item#tvs": {
+  "menu-item#quiero-ser": {
     "props": {
-      "id": "menu-item-tvs",
+      "id": "menu-item-quiero-ser",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -124,83 +155,210 @@
         "type": "internal",
         "href": "/decoration/tvs",
         "noFollow": true,
-        "tagTitle": "TVs",
-        "text": "TVs"
+        "tagTitle": "Quiero ser promotora",
+        "text": "Quiero ser promotora"
+      }
+    }
+  },
+  "menu-item#como-comprar": {
+    "props": {
+      "id": "menu-item-como-comprar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "Cómo comprar",
+        "text": "Cómo comprar"
+      }
+    }
+  },
+  "menu-item#contactanos": {
+    "props": {
+      "id": "menu-item-contactanos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-title",
+      "itemProps": {
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
+      }
+    }
+  },
+  "menu-item#numero-contacto": {
+    "props": {
+      "id": "menu-item-numero-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "tel:+56232106660",
+        "noFollow": true,
+        "tagTitle": "Número de contacto",
+        "text": "(+56) 2- 32106660"
       }
     }
   },
 
-  "vtex.menu@2.x:menu#footer-bags": {
+  "vtex.menu@2.x:menu#rrss": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
+      "menu-item#redes",
+      "menu-item#fb",
+      "menu-item#ig",
+      "menu-item#whatsapp",
+      "menu-item#whatsapp-1",
+      "menu-item#whatsapp-2"
     ]
   },
 
-  "menu-item#bags": {
+  "menu-item#redes": {
     "props": {
-      "id": "menu-item-bags",
+      "id": "menu-item-redes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "menu-title",
       "itemProps": {
-        "type": "internal",
-        "href": "/bags/d",
         "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
+        "tagTitle": "Redes Sociales",
+        "text": "Redes Sociales"
       }
     }
   },
 
-  "menu-item#backpacks": {
+  "menu-item#ig": {
     "props": {
-      "id": "menu-item-backpacks",
+      "id": "menu-item-ig",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "iconProps":{
+        "id": "icon-ig",
+        "viewBox": "0 0 24 20"
+      },
       "itemProps": {
         "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
+        "href": "https://www.instagram.com/kayser_chile/?hl=es-la",
+        "noFollow": true
       }
     }
   },
 
-  "menu-item#necessaire": {
+  "menu-item#fb": {
     "props": {
-      "id": "menu-item-necessaire",
+      "id": "menu-item-fb",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "iconProps":{
+        "id": "icon-fb",
+        "viewBox": "0 0 24 20"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.facebook.com/kaysercl/",
+        "noFollow": true
+      }
+    }
+  },
+
+  "menu-item#whatsapp": {
+    "props": {
+      "id": "menu-item-whatsapp",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-title",
       "itemProps": {
         "type": "internal",
         "href": "/bags/necessaire",
         "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
+        "tagTitle": "Whatsapp",
+        "text": "Whatsapp"
       }
     }
   },
 
-  "vtex.menu@2.x:menu#footer-clothing": {
+  "menu-item#whatsapp-1": {
+    "props": {
+      "id": "menu-item-whatsapp-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "icon-wsp",
+        "viewBox": "0 0 27 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send?phone=56940883516&text=Hola!%20Quiero%20consultar%20desde%20la%20web!  ",
+        "noFollow": true,
+        "tagTitle": "Servicio al cliente",
+        "text": "Servicio al cliente"
+      }
+    }
+  },
+
+  "menu-item#whatsapp-2": {
+    "props": {
+      "id": "menu-item-whatsapp-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "icon-wsp",
+        "viewBox": "0 0 27 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send?phone=56977678755&text=Hola!%20Quiero%20consultar%20desde%20la%20web!",
+        "noFollow": true,
+        "tagTitle": "Promotora",
+        "text": "Promotora"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#catalogo": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#catalogo-digital",
+      "image#catalogo"
     ]
+  },
+  "image#catalogo": {
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/catalogo-footer-otonoinvierno-2020-2021.jpg",
+      "maxHeight": 154,
+      "link":{
+        "url": "/catalogo"
+      }
+    }
+  },
+
+  "menu-item#catalogo-digital": {
+    "props": {
+      "id": "menu-item-catalogo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-title",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Catálogo digital",
+        "text": "Catálogo Digital"
+      }
+    }
   },
 
   "vtex.menu@2.x:menu#footer-mobile": {
@@ -265,9 +423,9 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#redes",
+      "menu-item#redes",
+      "menu-item#redes"
     ]
   },
 
@@ -289,9 +447,9 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#redes",
+      "menu-item#redes",
+      "menu-item#redes"
     ]
   },
 
