@@ -89,6 +89,10 @@
   align-self: center;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--navbar){
+  border-block-end: 1px solid #c6c6c6;
+}
+
 :global(.vtex-store-components-3-x-searchBarContainer)
 :global(.vtex-input-prefix__group){
   border-radius: 3px 0 0 3px;

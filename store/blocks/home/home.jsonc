@@ -4,13 +4,8 @@
       "list-context.image-list#carousel-main",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
       "rich-text#shelf-title-recomendados",
-      "flex-layout.row#shelf-recomendados",
-      "info-card#home",
-      "rich-text#question",
-      "flex-layout.row#deals",
-      "rich-text#link"
+      "flex-layout.row#shelf-recomendados"
     ]
   },
 
@@ -21,15 +16,15 @@
       "images": [
         {
           "image": "/arquivos/landing2.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "mobileImage": "/arquivos/landing2.png"
         },
         {
           "image": "/arquivos/landing3.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "mobileImage": "/arquivos/landing3.png"
         },
         {
           "image": "/arquivos/landing4.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "mobileImage": "/arquivos/landing4.png"
         }
       ]
     }

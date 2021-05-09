@@ -25,12 +25,27 @@
         "tagTitle": "Apparel & Accessories",
         "text": "Arma tu Pack"
       }
+    }
+  },
+  "menu-item#mujer": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "mujer",
+        "text": "Mujer"
+      }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#mujer"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#mujer": {
     "props": {
       "width": "auto"
     },
@@ -93,24 +108,10 @@
       }
     }
   },
-  "menu-item#mujer": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "mujer",
-        "text": "Mujer"
-      }
-    }
-  },
+  
   "menu-item#hombre": {
     "props": {
-      "id": "menu-item-custom-sale",
+      "id": "menu-item-hombre",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -123,60 +124,90 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#more"
+      "vtex.menu@2.x:submenu#hombre"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
+  "vtex.menu@2.x:submenu#hombre": {
     "props": {
-      "width": "100%"
+      "width": "auto"
     },
     "children": [
-      "flex-layout.row#menu-more"
+      "flex-layout.row#menu-hombre"
     ]
   },
-  "flex-layout.row#menu-more": {
+  "flex-layout.row#menu-hombre": {
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "flex-layout.col#menu-hombre-1",
+      "flex-layout.col#menu-hombre-2",
+      "flex-layout.col#menu-hombre-3",
+      "flex-layout.col#menu-hombre-4",
+      "flex-layout.col#menu-hombre-5"
     ]
   },
-  "flex-layout.col#menu-more-1": {
+  "flex-layout.col#menu-hombre-1": {
     "children": [
-      "vtex.menu@2.x:menu#more"
+      "vtex.menu@2.x:menu#hombre"
     ]
   },
-  "flex-layout.col#menu-more-2": {
+  "flex-layout.col#menu-hombre-2": {
     "children": [
-      "info-card#home"
+      "vtex.menu@2.x:menu#hombre-2"
     ]
   },
-  "vtex.menu@2.x:menu#more": {
+  "flex-layout.col#menu-hombre-3": {
+    "children": [
+      "vtex.menu@2.x:menu#hombre-3"
+    ]
+  },
+  "flex-layout.col#menu-hombre-4": {
+    "children": [
+      "vtex.menu@2.x:menu#hombre-4"
+    ]
+  },
+  "flex-layout.col#menu-hombre-5": {
+    "children": [
+      "vtex.menu@2.x:menu#hombre-5"
+    ]
+  },
+  "vtex.menu@2.x:menu#hombre": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
+      "menu-item#boxer-title",
+      "menu-item#calzoncillos-largos",
+      "menu-item#sin-costura",
+      "menu-item#trevira",
+      "menu-item#corto-algodon",
+      "menu-item#corto-bamboo",
+      "menu-item#largo-algodon",
+      "menu-item#largo-bamboo",
+      "menu-item#todo-boxer"
     ]
   },
-  "menu-item#about-us": {
+  "menu-item#boxer-title": {
     "props": {
-      "id": "menu-item-about-us",
+      "blockClass": "header-title",
+      "id": "menu-item-boxer-title",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
       "itemProps": {
         "type": "internal",
         "href": "/about-us",
         "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
+        "tagTitle": "Boxer",
+        "text": "Boxer"
       }
     }
   },
-  "menu-item#faq": {
+  "menu-item#calzoncillos-largos": {
     "props": {
-      "id": "menu-item-faq",
+      "id": "menu-item-calzoncillos-largos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -184,14 +215,14 @@
         "type": "internal",
         "href": "/faq",
         "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
+        "tagTitle": "Calzoncillos largos",
+        "text": "Calzoncillos largos"
       }
     }
   },
-  "menu-item#contact-us": {
+  "menu-item#sin-costura": {
     "props": {
-      "id": "menu-item-contact-us",
+      "id": "menu-item-sin-costura",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -199,11 +230,458 @@
         "type": "internal",
         "href": "/contact-us",
         "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Sin costura",
+        "text": "Sin costura"
       }
     }
   },
+  "menu-item#trevira": {
+    "props": {
+      "id": "menu-item-trevira",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Trevira",
+        "text": "Trevira"
+      }
+    }
+  },
+  "menu-item#corto-algodon": {
+    "props": {
+      "id": "menu-item-corto-algodon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Corto algodón",
+        "text": "Corto algodón"
+      }
+    }
+  },
+  "menu-item#corto-bamboo": {
+    "props": {
+      "id": "menu-item-corto-bamboo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Corto bamboo",
+        "text": "Corto bamboo"
+      }
+    }
+  },
+  "menu-item#largo-algodon": {
+    "props": {
+      "id": "menu-item-largo-algodon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Largo algodón",
+        "text": "Largo algodón"
+      }
+    }
+  },
+  "menu-item#largo-bamboo": {
+    "props": {
+      "id": "menu-item-Bamboo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Largo bamboo",
+        "text": "Largo bamboo"
+      }
+    }
+  },
+  "menu-item#todo-boxer": {
+    "props": {
+      "id": "menu-item-todo-boxer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Boxer",
+        "text": "Todo Boxer"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#hombre-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calcetines-title",
+      "menu-item#largos",
+      "menu-item#deportivos",
+      "menu-item#invisibles",
+      "menu-item#algodon",
+      "menu-item#bamboo",
+      "menu-item#todo-calcetines"
+
+    ]
+  },
+
+  "menu-item#calcetines-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-calcetines-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Calcetines",
+        "text": "Calcetines"
+      }
+    }
+  },
+  "menu-item#largos": {
+    "props": {
+      "id": "menu-item-largos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Largos",
+        "text": "Largos"
+      }
+    }
+  },
+  "menu-item#deportivos": {
+    "props": {
+      "id": "menu-item-deportivos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Deportivos",
+        "text": "Deportivos"
+      }
+    }
+  },
+  "menu-item#invisibles": {
+    "props": {
+      "id": "menu-item-invisibles",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Invisibles",
+        "text": "Invisibles"
+      }
+    }
+  },
+  "menu-item#algodon": {
+    "props": {
+      "id": "menu-item-algodon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Algodón",
+        "text": "Algodón"
+      }
+    }
+  },
+  "menu-item#bamboo": {
+    "props": {
+      "id": "menu-item-bamboo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Bamboo",
+        "text": "Bamboo"
+      }
+    }
+  },
+  "menu-item#todo-calcetines": {
+    "props": {
+      "id": "menu-item-todo-calcetines",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Calcetines",
+        "text": "Todo Calcetines"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#hombre-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#pijamas-title",
+      "menu-item#batas",
+      "menu-item#batas-algodon",
+      "menu-item#polar",
+      "menu-item#todo-pijamas"
+    ]
+  },
+  "menu-item#pijamas-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-pijamas-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Pijamas y Batas",
+        "text": "Pijamas y Batas"
+      }
+    }
+  },
+  "menu-item#batas": {
+    "props": {
+      "id": "menu-item-batas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Batas",
+        "text": "Batas"
+      }
+    }
+  },
+  "menu-item#batas-algodon": {
+    "props": {
+      "id": "menu-item-batas-algodon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Algodón",
+        "text": "Algodón"
+      }
+    }
+  },
+  "menu-item#polar": {
+    "props": {
+      "id": "menu-item-polar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Polar",
+        "text": "Polar"
+      }
+    }
+  },
+  "menu-item#todo-pijamas": {
+    "props": {
+      "id": "menu-item-todo-pijamas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Pijamas",
+        "text": "Todo Pijamas"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#hombre-4": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#slip-title",
+      "menu-item#estampado",
+      "menu-item#todo-slip"
+    ]
+  },
+  "menu-item#slip-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-slip-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Slip",
+        "text": "Slip"
+      }
+    }
+  },
+  "menu-item#estampado": {
+    "props": {
+      "id": "menu-item-estampado",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Estampado",
+        "text": "Estampado"
+      }
+    }
+  },
+  "menu-item#todo-slip": {
+    "props": {
+      "id": "menu-item-todo-slip",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Slip",
+        "text": "Todo Slip"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#hombre-5": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#camisetas-title",
+      "menu-item#manga-corta",
+      "menu-item#manga-larga",
+      "menu-item#todo-camisetas"
+    ]
+  },
+  "menu-item#camisetas-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-camisetas-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+  "menu-item#manga-corta": {
+    "props": {
+      "id": "menu-item-manga-corta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Manga corta",
+        "text": "Manga corta"
+      }
+    }
+  },
+  "menu-item#manga-larga": {
+    "props": {
+      "id": "menu-item-manga-larga",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Manga larga",
+        "text": "Manga larga"
+      }
+    }
+  },
+  "menu-item#todo-camisetas": {
+    "props": {
+      "id": "menu-item-todo-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Camisetas",
+        "text": "Todo Camisetas"
+      }
+    }
+  },
+
 
   "menu-item#kids": {
     "props": {
@@ -227,12 +705,16 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "iconProps":{
+        "id": "hpa-hamburguer-menu",
+        "viewBox": "0 0 16 16"
+      },
       "itemProps": {
         "type": "internal",
         "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "otras",
-        "text": "Otras\nCategorias"
+        "text": "Otras Categorias"
       }
     }
   },
