@@ -16,12 +16,10 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 2,
-      "marginTop": 5
+      "marginTop": 6
     },
     "children": [
-      "product-list-price",
-      "product-price-savings"
+      "product-list-price"
     ]
   }
 }

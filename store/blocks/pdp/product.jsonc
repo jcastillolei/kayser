@@ -1,14 +1,13 @@
 {
   "store.product": {
     "children": [
-      "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "rich-text#shelf-title-recomendados",
+      "flex-layout.row#shelf-recomendados"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -68,7 +67,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "60%",
+      "width": "50%",
       "rowGap": 0
     }
   },
@@ -81,36 +80,48 @@
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "zoomMode": "disabled"
     }
   },
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass": "right-col"
     },
     "children": [
+      "product-separator",
+      "flex-layout.row#product-breadcrumb",
+      "product-separator",
       "flex-layout.row#product-name",
-      "product-rating-summary",
+      "product-identifier.product",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",
       "product-separator",
-      "product-identifier.product",
       "sku-selector",
-      "product-quantity",
-      "product-assembly-options",
-      "product-gifts",
-      "flex-layout.row#buy-button",
-      "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "product-separator",
+      "flex-layout.row#qty-buy",
+      "product-separator",
+      "share#kayser"
     ]
+  },
+
+  "flex-layout.row#qty-buy": {
+    "children": ["product-quantity", "add-to-cart-button"]
+  },
+
+  "add-to-cart-button":{
+    "props":{
+      "text": "Comprar"
+    }
   },
 
   "flex-layout.row#product-name": {
     "props": {
-      "marginBottom": 3
+      "marginBottom": 0
     },
     "children": ["vtex.store-components:product-name"]
   },
@@ -130,13 +141,16 @@
     "children": ["add-to-cart-button"]
   },
 
-  "share#default": {
+  "share#kayser": {
     "props": {
       "social": {
         "Facebook": true,
         "WhatsApp": true,
-        "Twitter": false,
+        "Twitter": true,
         "Pinterest": true
+      },
+      "options": {
+        "size": 30
       }
     }
   }

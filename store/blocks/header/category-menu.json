@@ -47,7 +47,7 @@
   },
   "vtex.menu@2.x:submenu#mujer": {
     "props": {
-      "width": "auto"
+      "width": "100%"
     },
     "children": [
       "vtex.menu@2.x:menu#category-apparel"
@@ -129,7 +129,7 @@
   },
   "vtex.menu@2.x:submenu#hombre": {
     "props": {
-      "width": "auto"
+      "width": "100%"
     },
     "children": [
       "flex-layout.row#menu-hombre"
@@ -141,8 +141,13 @@
       "flex-layout.col#menu-hombre-2",
       "flex-layout.col#menu-hombre-3",
       "flex-layout.col#menu-hombre-4",
-      "flex-layout.col#menu-hombre-5"
-    ]
+      "flex-layout.col#menu-hombre-5",
+      "flex-layout.row#boton-hombre",
+      "flex-layout.row#image-hombre"
+    ],
+    "props":{
+      "preventHorizontalStretch": true
+    }
   },
   "flex-layout.col#menu-hombre-1": {
     "children": [
@@ -681,7 +686,26 @@
       }
     }
   },
+  "flex-layout.row#boton-hombre":{
+    "children": ["rich-text#ver-hombre"]
+  },
+  "rich-text#ver-hombre":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Todo hombre](https://help.vtex.com/en/faq/what-is-vtex-io)",
+      "blockClass": "btn-more"
+    }
+  },
 
+  "flex-layout.row#image-hombre":{
+    "children": ["image#banner-hombre"]
+  },
+  "image#banner-hombre":{
+    "props": {
+      "src": "https://kayserltda.vteximg.com.br/arquivos/subs_hombre.png?v=637499057190000000"
+    }
+  },
 
   "menu-item#kids": {
     "props": {
@@ -705,6 +729,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "otras",
       "iconProps":{
         "id": "hpa-hamburguer-menu",
         "viewBox": "0 0 16 16"

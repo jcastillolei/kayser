@@ -93,6 +93,15 @@
   align-items: center;
 }
 
+.flexRowContent--navbar :global(.vtex-menu-2-x-styledLinkContainer--otras){
+  width: min-content;
+}
+
+.flexRowContent--navbar :global(.vtex-menu-2-x-styledLinkContent--otras){
+  width: 60%;
+  white-space: break-spaces;
+}
+
 .flexRowContent--navbar :global(.vtex-menu-2-x-menuItem){
   align-self: center;
 }
@@ -164,3 +173,220 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRow--busquedas-footer{
+  background: rgb(244, 244, 244);
+}
+
+.flexRow--credits{
+  background: #e6e6e6;
+}
+
+/* páginas de productos */
+/* producto: imagen */
+:global(.vtex-stack-layout-0-x-stackContainer--product)
+:global(.vtex-store-components-3-x-productImagesGallerySlide)::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.045);
+}
+
+:global(.vtex-stack-layout-0-x-stackContainer--product)
+:global(.vtex-store-components-3-x-figure)::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.045);
+}
+
+:global(.vtex-stack-layout-0-x-stackContainer--product)
+:global(.vtex-store-components-3-x-carouselGaleryCursor){
+  padding-left: 3px;
+}
+:global(.vtex-stack-layout-0-x-stackContainer--product)
+:global(.vtex-store-components-3-x-productImagesThumb){
+  margin-bottom: 3px;
+}
+
+/* producto: nombre y precios */
+.flexCol--right-col
+:global(.vtex-store-components-3-x-productBrand--quickview){
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.flexCol--right-col
+:global(.vtex-product-identifier-0-x-product-identifier--productReference){
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.flexCol--right-col
+:global(.vtex-product-identifier-0-x-product-identifier--productReference)
+:global(.vtex-product-identifier-0-x-product-identifier__label){
+  font-size: 0;
+}
+
+.flexCol--right-col
+:global(.vtex-product-identifier-0-x-product-identifier--productReference)
+:global(.vtex-product-identifier-0-x-product-identifier__label)::before{
+  content: 'Cod';
+  font-size: 13px;
+}
+
+.flexCol--right-col
+:global(.vtex-product-price-1-x-listPrice){
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flexCol--right-col
+:global(.vtex-product-price-1-x-sellingPriceValue){
+  color: #ff0000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.flexCol--right-col
+:global(.vtex-product-price-1-x-currencyCode){
+  margin-right: 4px;
+}
+
+/* producto: sku selector */
+
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorName),
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorNameSeparator){
+  color: #888;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorSelectorImageValue){
+  display: none;
+}
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--talla)
+:global(.vtex-store-components-3-x-skuSelectorName)::after{
+  content: ':';
+}
+
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--talla)
+:global(.vtex-store-components-3-x-skuSelectorItem){
+  height: auto;
+}
+
+
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--talla)
+:global(.vtex-store-components-3-x-skuSelectorInternalBox){
+  border: revert;
+}
+
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--talla)
+:global(.vtex-store-components-3-x-skuSelectorItemTextValue){
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 0.4rem;
+}
+
+.flexCol--right-col
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--talla)
+:global(.vtex-store-components-3-x-skuSelectorItemTextValue):hover{
+  background-color: #2a86e4;
+  border: 1px solid #ccc;
+  color: white;
+}
+
+/* producto: cantidad */
+
+.flexCol--right-col
+:global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+  display: none;
+}
+
+.flexCol--right-col
+:global(.vtex-numeric-stepper__minus-button),
+.flexCol--right-col
+:global(.vtex-numeric-stepper__plus-button){
+  background-color: white;
+  border: 1px solid #ccc;
+  height: 36px;
+}
+
+.flexCol--right-col
+:global(.vtex-numeric-stepper__minus-button__text),
+.flexCol--right-col
+:global(.vtex-numeric-stepper__plus-button__text)
+{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.flexCol--right-col
+:global(.vtex-numeric-stepper__input){
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  height: 36px;
+  width: 48px;
+}
+
+.flexCol--right-col
+:global(.vtex-product-quantity-1-x-quantitySelectorContainer){
+  margin-bottom: 0;
+}
+
+/* producto: botón comprar */
+.flexCol--right-col
+:global(.vtex-button){
+  background-color: #2a86e4;
+  border: none;
+  height: 36px;
+  min-height: 36px;
+}
+.flexCol--right-col
+:global(.vtex-button__label){
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+/* producto: compartir */
+.flexCol--right-col
+:global(.vtex-store-components-3-x-shareLabel){
+  font-size: 0;
+}
+.flexCol--right-col
+:global(.vtex-store-components-3-x-shareLabel)::after{
+  color: #4d4d4d;
+  content: 'Comparte este producto:';
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+

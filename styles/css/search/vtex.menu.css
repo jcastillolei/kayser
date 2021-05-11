@@ -1,0 +1,17 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar) 
+.submenuContainer{  
+    
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar) 
+.submenuWrapper--isOpen{
+    border: 1px solid #ccc;
+    margin-top: 7px;
+    padding: 2rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar) 
+.submenuWrapper--isOpen
+.menuItem{
+    align-self: start;
+}
