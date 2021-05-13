@@ -2,9 +2,6 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-main",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
       "shelf.relatedProducts",
       "rich-text#shelf-title-recomendados",
       "flex-layout.row#shelf-recomendados"
@@ -22,7 +19,8 @@
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
-      "marginTop": 4
+      "marginTop": 4,
+      "blockClass": "breadcrumb-prod"
     },
     "children": ["breadcrumb"]
   },
@@ -105,17 +103,20 @@
       "product-separator",
       "flex-layout.row#qty-buy",
       "product-separator",
+      "product-separator",
+      "menu-item#accordion-specs",
+      "product-separator",
       "share#kayser"
     ]
   },
-
   "flex-layout.row#qty-buy": {
     "children": ["product-quantity", "add-to-cart-button"]
   },
 
   "add-to-cart-button":{
     "props":{
-      "text": "Comprar"
+      "text": "Comprar",
+      "unavailableText": "No disponible"
     }
   },
 
@@ -129,7 +130,8 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "showValueNameForImageVariation": true,
+      "initialSelection": "empty"
     }
   },
 
@@ -151,6 +153,45 @@
       },
       "options": {
         "size": 30
+      }
+    }
+  },
+
+  "menu-item#accordion-specs": {
+    "props": {
+      "blockClass": "caracteristicas-producto",
+      "itemProps": {
+        "tagTitle": "Características",
+        "text": "Características"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#specs"]
+  },
+  "vtex.menu@2.x:submenu.accordion#specs": {
+    "children": ["vtex.menu@2.x:menu#spec"]
+  },
+
+  "vtex.menu@2.x:menu#spec": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#description"
+    ]
+  },
+
+  "menu-item#spec": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
       }
     }
   }
