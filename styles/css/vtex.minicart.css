@@ -1,0 +1,9 @@
+.overlay{
+    background: rgba(0, 0, 0, 0.8);
+}
+.opened{
+    box-shadow: -3px -3px 5px rgb(204 204 204 / 40%);
+}
+.closeIconContainer{
+    justify-content: flex-end;
+}
