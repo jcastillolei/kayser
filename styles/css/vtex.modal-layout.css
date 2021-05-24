@@ -87,3 +87,36 @@
 .paper--product-gifts {
   padding: 1.5rem;
 }
+
+.modal--modal-pdp
+:global(.vtex-store-components-3-x-imageElement){
+  align-self: center;
+}
+.modal--modal-pdp
+.closeIcon{
+  color: #ccc;
+  transition: color .2s ease-out;
+}
+.modal--modal-pdp
+:global(.vtex-iframe-0-x-container){
+  padding: 2rem;
+}
+.modal--modal-pdp
+.closeIcon:hover{
+  color: rgb(255, 0, 0);
+}
+.modal--modal-pdp
+.headerContainer{
+  border: none;
+}
+.modal--modal-pdp
+:global(.vtex-rich-text-0-x-container){
+  align-self: center;
+  color: #595959;
+}
+.modal--modal-pdp
+:global(.vtex-rich-text-0-x-heading){
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}

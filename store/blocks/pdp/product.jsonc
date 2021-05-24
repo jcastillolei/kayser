@@ -110,9 +110,110 @@
     ]
   },
   "flex-layout.row#qty-buy": {
-    "children": ["product-quantity", "add-to-cart-button"]
+    "children": ["modal-trigger#guia-tallas", "modal-trigger#como-medirme", "product-quantity", "add-to-cart-button"]
+  },
+  
+  "modal-trigger#guia-tallas": {
+    "children": [
+      "menu-item#guia-tallas",
+      "modal-layout#guia-tallas"
+    ]
+  },
+  "menu-item#guia-tallas": {
+    "props": {
+      "id": "guia-tallas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Guía de tallas",
+        "text": "Guía de tallas"
+      }
+    }
+  },
+  "rich-text#example": {
+    "props": {
+      "text": "Click me"
+    }
+  },
+  "modal-layout#guia-tallas": {
+    "children": [
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Hello"
+    }
   },
 
+  "modal-trigger#como-medirme": {
+    "children": [
+      "menu-item#como-medirme",
+      "modal-layout#como-medirme"
+    ]
+  },
+  "menu-item#como-medirme": {
+    "props": {
+      "id": "guia-tallas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cómo medirme",
+        "text": "¿Cómo medirme?"
+      }
+    }
+  },
+  "modal-layout#como-medirme": {
+    "children": [
+      "modal-header#como-medirme",
+      "image#logo-kayser",
+      "rich-text#como-medirme",
+      "iframe#como-medirme"
+    ],
+    "props":{
+      "blockClass": "modal-pdp"
+    }
+  },
+  "modal-header#como-medirme":{
+    "props": {
+      "showCloseButton": true
+    }
+  },
+  "rich-text#como-medirme": {
+    "props": {
+      "text": "## ¿Cómo medirme?"
+    }
+  },
+  "image#logo-kayser":{
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/logo.png",
+      "maxHeight": 45,
+      "maxWidth": 105
+    }
+  },
+  "iframe#como-medirme": {
+    "props": {
+      "src": "https://www.youtube.com/embed/6IDTtL6GGGI",
+      "width": "560",
+      "height": "315"
+    }
+  },
   "add-to-cart-button":{
     "props":{
       "text": "Comprar",

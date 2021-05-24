@@ -77,7 +77,8 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
-      "showNavigationArrows": "always"
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
     }
   },
 

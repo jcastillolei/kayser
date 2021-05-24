@@ -111,3 +111,13 @@
   text-transform: capitalize;
 }
 
+
+
+.sliderLayoutContainer--shelf
+.sliderArrows{
+  background: #2a86e4 !important;
+  border-radius: 50%;
+  color: white;
+  height: 20px;
+  width: 20px;
+}
