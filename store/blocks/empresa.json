@@ -1,0 +1,49 @@
+{
+  "store.custom#empresa": {
+    "blocks": [
+      "image#empresa",
+      "flex-layout.row#empresa"
+    ]
+  },
+  "image#empresa": {
+    "props": {
+      "src": "https://kayserltda.vteximg.com.br/arquivos/ids/189181/nuestra-empresa.jpg?v=637230945714970000",
+      "blockClass": "img-institucional"
+    }
+  },
+  "flex-layout.row#empresa": {
+    "children": [
+      "flex-layout.col#text-empresa"
+    ],
+    "props":{
+      "marginBottom": "10",
+      "marginTop": "5"
+    }
+  },
+
+  "flex-layout.col#text-empresa": {
+    "children": [
+      "rich-text#title-empresa",
+      "rich-text#empresa"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-empresa": {
+    "props": {
+      "text":
+      "##### NUESTRA EMPRESA",
+      "blockClass": "txt-institucional--title"
+    }
+  },
+
+  "rich-text#empresa": {
+    "props": {
+      "text": "Kayser nace en Sudamérica en los años 60, cuando su Fundador Don Jacob Nazal negocia en EE.UU., el uso de la marca para la fabricación y venta en todo el territorio.\n \nEn 1998, Edward Abugattas y Jaime Nazal toman el control de la compañía y adquieren la marca para su comercialización en toda América, dando un nuevo enfoque comercial dirigido a toda la familia.\n \nEn la actualidad, además de la casa matriz en Chile, contamos con una casa matriz ubicada en Perú, posicionándonos como la marca líder de mercado en esos países, con mas de 120 tiendas propias.\n \nComercializamos nuestros productos en más de 30 países, teniendo el centro de distribución, administrativo y logístico en Hong Kong – Asia.",
+      "blockClass": "txt-institucional--p"
+    }
+  }
+}

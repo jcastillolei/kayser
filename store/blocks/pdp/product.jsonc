@@ -3,8 +3,8 @@
     "children": [
       "flex-layout.row#product-main",
       "shelf.relatedProducts",
-      "rich-text#shelf-title-recomendados",
-      "flex-layout.row#shelf-recomendados"
+      "rich-text#shelf-title-relacionados",
+      "flex-layout.row#shelf-relacionados"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -110,14 +110,26 @@
     ]
   },
   "flex-layout.row#qty-buy": {
-    "children": ["modal-trigger#guia-tallas", "modal-trigger#como-medirme", "product-quantity", "add-to-cart-button"]
+    "children": ["modal-trigger#guia-tallas", "modal-trigger#como-medirme", "flex-layout.col#spacerbuy", "product-quantity", "add-to-cart-button"],
+    "props":{
+      "blockClass": "buy-button"
+    }
+  },
+
+  "flex-layout.col#spacerbuy": {
+    "props": {
+      "width": "20%"
+    }
   },
   
   "modal-trigger#guia-tallas": {
     "children": [
       "menu-item#guia-tallas",
       "modal-layout#guia-tallas"
-    ]
+    ],
+    "props":{
+      "width": "120px"
+    }
   },
   "menu-item#guia-tallas": {
     "props": {
@@ -126,8 +138,8 @@
       "iconId": null,
       "highlight": false,
       "iconProps":{
-        "id": "hpa-login",
-        "viewBox": "0 0 24 16"
+        "id": "icon-tallas",
+        "viewBox": "0 0 98 98"
       },
       "itemProps": {
         "type": "internal",
@@ -138,19 +150,20 @@
       }
     }
   },
-  "rich-text#example": {
-    "props": {
-      "text": "Click me"
-    }
-  },
+  
   "modal-layout#guia-tallas": {
     "children": [
-      "rich-text#modal-content"
-    ]
-  },
-  "rich-text#modal-content": {
+      "image#img-tallas"
+    ],
     "props": {
-      "text": "Hello"
+      "blockClass": "guia_modal"
+    }
+  },
+  "image#img-tallas":{
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/guia-mujer-c_03.jpg",
+      "maxHeight": 500,
+      "maxWidth": 1200
     }
   },
 
@@ -158,11 +171,14 @@
     "children": [
       "menu-item#como-medirme",
       "modal-layout#como-medirme"
-    ]
+    ],
+    "props":{
+      "width": "130px"
+    }
   },
   "menu-item#como-medirme": {
     "props": {
-      "id": "guia-tallas",
+      "id": "como-medirme",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -232,7 +248,8 @@
     "props": {
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true,
-      "initialSelection": "empty"
+      "initialSelection": "empty",
+      "maxItems": 15
     }
   },
 
@@ -280,20 +297,34 @@
       "flex-layout.row#description"
     ]
   },
-
-  "menu-item#spec": {
+  "rich-text#shelf-title-relacionados": {
     "props": {
-      "id": "menu-item-category-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+      "text": "## Productos relacionados",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-relacionados": {
+    "children": ["list-context.product-list#productos-relacionados"]
+  },
+  "list-context.product-list#productos-relacionados": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#productos-relacionados"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#productos-relacionados": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
     }
   }
 }

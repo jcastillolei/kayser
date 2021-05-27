@@ -1,0 +1,49 @@
+{
+  "store.custom#envio": {
+    "blocks": [
+      "image#envio",
+      "flex-layout.row#envio"
+    ]
+  },
+  "image#envio": {
+    "props": {
+      "src": "https://kayserltda.vteximg.com.br/arquivos/ids/189183/politicas-envio.jpg?v=637230948915570000",
+      "blockClass": "img-institucional"
+    }
+  },
+  "flex-layout.row#envio": {
+    "children": [
+      "flex-layout.col#text-envio"
+    ],
+    "props":{
+      "marginBottom": "10",
+      "marginTop": "5"
+    }
+  },
+
+  "flex-layout.col#text-envio": {
+    "children": [
+      "rich-text#title-envio",
+      "rich-text#envio"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-envio": {
+    "props": {
+      "text":
+      "##### POLÍTICA DE ENVÍO",
+      "blockClass": "txt-institucional--title"
+    }
+  },
+
+  "rich-text#envio": {
+    "props": {
+      "text": "Todas las compras realizadas de Lunes a Viernes hasta antes de las 13:00 horas cuentan con servicio de entrega en un plazo de 48 horas para las principales ciudades y hasta 72 horas para zonas más extremas.\n \nCompras realizadas después de las 13:00 horas cuentan con la misma política pero a contar del día hábil siguiente de la compra\n \nCompras realizadas durante los días Sábados, Domingos y Festivos, cuentan con la misma política de envío a contar del próximo día hábil disponible.\n \n &#42;Debido a la contingencia nuestros plazos de entrega se encuentran afectados. Seguimos despachando a todo el país pese a las cuarentenas pero los plazos se están viendo afectados velando por la salud y bienestar de todos nuestros colaboradores. Los plazos de entrega puede demorar hasta 10 días e incluso en algunos casos se pueden extender hasta 15 días&#42;",
+      "blockClass": "txt-institucional--p"
+    }
+  }
+}

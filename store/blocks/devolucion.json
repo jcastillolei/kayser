@@ -1,0 +1,49 @@
+{
+  "store.custom#devolucion": {
+    "blocks": [
+      "image#devolucion",
+      "flex-layout.row#devolucion"
+    ]
+  },
+  "image#devolucion": {
+    "props": {
+      "src": "https://kayserltda.vteximg.com.br/arquivos/ids/189182/politicas-devolucion.jpg?v=637230946944800000",
+      "blockClass": "img-institucional"
+    }
+  },
+  "flex-layout.row#devolucion": {
+    "children": [
+      "flex-layout.col#text-devolucion"
+    ],
+    "props":{
+      "marginBottom": "10",
+      "marginTop": "5"
+    }
+  },
+
+  "flex-layout.col#text-devolucion": {
+    "children": [
+      "rich-text#title-devolucion",
+      "rich-text#devolucion"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-devolucion": {
+    "props": {
+      "text":
+      "##### POLÍTICA DE DEVOLUCIÓN",
+      "blockClass": "txt-institucional--title"
+    }
+  },
+
+  "rich-text#devolucion": {
+    "props": {
+      "text": "Las siguientes políticas son válidas exclusivamente para compras Online, se excluye toda compra presencial en nuestras sucursales, ya que estás cuentan con otro tipo de políticas.\n \nSi por alguna razón no te encuentras satisfecho con tu compra *al momento de recibirla*, puedes devolver tu producto en sus condiciones originales dentro de los primeros 10 días hábiles para reembolsar tu dinero, 30 días para cambios y 90 días para cambios por falla de producto. (El plazo cuenta desde el día en que recibiste el producto en tus manos).\n \nCómo y tiempos de devolución de dinero:\n \nSí pagaste con Webpay. Te devolveremos tu dinero vía transferencia bancaria, para esto un ejecutivo de nuestro SAC se comunicará contigo y solicitara los datos necesarios para poder realizar la transferencia. El tiempo es de 7 días hábiles una vez entregado los datos\n \nSi pagaste con MERCADOPAGO. Se solicitará la devolución a mercado pago, quedando nulo el pago y el tiempo de retorno de tu dinero a tu cuenta, es de 13 días hábiles vía mercado pago.\n \nSi tienes dudas, comunícate con nosotros por nuestra vía de contacto web y atenderemos tu caso o nos puedes escribir directamente a contacto@kayser.cl",
+      "blockClass": "txt-institucional--p"
+    }
+  }
+}

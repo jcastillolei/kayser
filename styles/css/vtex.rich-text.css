@@ -91,3 +91,30 @@
     line-height: 1.3em;
   }
 }
+
+
+/* textos: institucionales */
+.heading--txt-institucional--title{
+  color: #909090;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.paragraph--txt-institucional--p{
+  color: #555;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.4rem;
+  margin-bottom: 1.3rem;
+}
+
+@media(max-width: 991px){
+  .wrapper--txt-institucional--title,
+  .wrapper--txt-institucional--p{
+    margin: 0 3.5rem;
+  }
+}

@@ -104,3 +104,8 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+:global(.vtex-product-context-provider)
+.container{
+  max-width: 90%;
+}

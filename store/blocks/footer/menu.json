@@ -33,7 +33,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/empresa",
         "noFollow": false,
         "tagTitle": "Empresa",
         "text": "Empresa"
@@ -48,7 +48,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/politica-de-devolucion",
         "noFollow": false,
         "tagTitle": "política devolucion",
         "text": "Política de devolución"
@@ -63,7 +63,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/politica-de-envio",
         "noFollow": false,
         "tagTitle": "Política de envío",
         "text": "Política de envío"
@@ -78,7 +78,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/terminos-condiciones",
         "noFollow": false,
         "tagTitle": "Terminos",
         "text": "Términos y condiciones"
@@ -93,7 +93,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/tiendas",
         "noFollow": false,
         "tagTitle": "Tiendas",
         "text": "Tiendas"

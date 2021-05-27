@@ -185,6 +185,7 @@
 /* páginas de productos */
 
 /* producto: imagen */
+
 :global(.vtex-stack-layout-0-x-stackContainer--product)
 :global(.vtex-store-components-3-x-productImagesGallerySlide)::before{
   content: '';
@@ -205,6 +206,7 @@
 
 :global(.vtex-stack-layout-0-x-stackContainer--product)
 :global(.vtex-store-components-3-x-carouselGaleryCursor){
+  cursor: default;
   padding-left: 3px;
 }
 :global(.vtex-stack-layout-0-x-stackContainer--product)
@@ -423,6 +425,40 @@
 .flexCol--right-col
 :global(.vtex-product-quantity-1-x-quantitySelectorContainer){
   margin-bottom: 0;
+}
+
+/* producto: modal */
+.flexRow--buy-button
+.stretchChildrenWidth{
+  padding-right: 0px;
+}
+
+.flexCol--right-col
+:global(.vtex-modal-layout-0-x-triggerContainer){
+  align-self: center;
+}
+
+.flexCol--right-col
+:global(.vtex-modal-layout-0-x-triggerContainer)
+:global(.vtex-menu-2-x-styledLinkContainer){
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.flexCol--right-col
+:global(.vtex-modal-layout-0-x-triggerContainer)
+:global(.vtex-menu-2-x-styledLinkContent){
+  justify-content: flex-start;
+}
+
+.flexCol--right-col
+:global(.vtex-modal-layout-0-x-triggerContainer)
+:global(.vtex-menu-2-x-styledLinkContent){
+  align-items: center;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Raleway',sans-serif;
 }
 
 /* producto: botón comprar */

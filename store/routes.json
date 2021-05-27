@@ -1,6 +1,18 @@
 {
-  "store.custom#about-us": {
-    "path": "/about-us"
+  "store.custom#empresa": {
+    "path": "/institucional/empresa"
+  },
+  "store.custom#devolucion": {
+    "path": "/institucional/politica-de-devolucion"
+  },
+  "store.custom#terminos": {
+    "path": "/institucional/terminos-condiciones"
+  },
+  "store.custom#envio": {
+    "path": "/institucional/politica-de-envio"
+  },
+  "store.custom#catalogo": {
+    "path": "/catalogo"
   },
   "store.custom#faq": {
     "path": "/faq"
