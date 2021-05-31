@@ -41,10 +41,16 @@
       "fullWidth": true
     },
     "children": [      
-      "vtex.menu@2.x:menu#institutional",
+      "rich-text#topbar-left",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#websites"
     ]
+  },
+  "rich-text#topbar-left":{
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique lectus sed leo rhoncus, ac suscipit justo imperdiet. Sed dignissim cursus urna ac tincidunt. Phasellus.",
+      "blockClass": "topbar-left"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -103,7 +109,7 @@
       },
       "itemProps": {
         "type": "internal",
-        "href": "/account#/orders",
+        "href": "/account",
         "noFollow": false
       }
     }
@@ -178,9 +184,9 @@
 
   "logo#mobile": {
     "props": {
-      "title": "Logo",
+      "title": "Logo Kayser",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000C8F/es-PE/images/logo/logo.png",
       "width": "70"
     }
   }

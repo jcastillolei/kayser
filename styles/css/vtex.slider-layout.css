@@ -45,6 +45,10 @@
 }
 
 /* p r o d u c t o s   r e c o m e n d a d o s */
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+.slideChildrenContainer--shelf-xxl
+:global(.vtex-product-summary-2-x-element),
 .sliderLayoutContainer--shelf
 .slide--shelf
 .slideChildrenContainer--shelf
@@ -52,6 +56,11 @@
   padding-top: 0px;
 }
 
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+.slideChildrenContainer--shelf-xxl
+:global(.vtex-product-summary-2-x-element)
+:global(.vtex-product-summary-2-x-imageStackContainer)::before,
 .sliderLayoutContainer--shelf
 .slide--shelf
 .slideChildrenContainer--shelf
@@ -64,6 +73,9 @@
   width: 100%;
 }
 
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+.slideChildrenContainer--shelf-xxl,
 .sliderLayoutContainer--shelf
 .slide--shelf
 .slideChildrenContainer--shelf{
@@ -71,6 +83,9 @@
   border: 1px solid rgba(204, 204, 204, 0.9);
 }
 
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+:global(.vtex-product-summary-2-x-brandName),
 .sliderLayoutContainer--shelf
 .slide--shelf
 :global(.vtex-product-summary-2-x-brandName){
@@ -81,6 +96,9 @@
   text-transform: uppercase;
 }
 
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+:global(.vtex-product-price-1-x-listPriceValue--summary),
 .sliderLayoutContainer--shelf
 .slide--shelf
 :global(.vtex-product-price-1-x-listPriceValue--summary){
@@ -90,6 +108,9 @@
   font-weight: 600;
 }
 
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+:global(.vtex-product-price-1-x-sellingPriceValue--summary),
 .sliderLayoutContainer--shelf
 .slide--shelf
 :global(.vtex-product-price-1-x-sellingPriceValue--summary){
@@ -99,6 +120,9 @@
   font-weight: 800;
 }
 
+.sliderLayoutContainer--shelf-xxl
+.slide--shelf-xxl
+:global(.vtex-button),
 .sliderLayoutContainer--shelf
 .slide--shelf
 :global(.vtex-button){
@@ -113,8 +137,8 @@
   text-transform: capitalize;
 }
 
-
-
+.sliderLayoutContainer--shelf-xxl
+.sliderArrows,
 .sliderLayoutContainer--shelf
 .sliderArrows{
   background: #2a86e4 !important;
@@ -124,7 +148,16 @@
   width: 20px;
 }
 
+.sliderLayoutContainer--shelf-xxl,
 .sliderLayoutContainer--shelf{
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--xxl-vitrina){
+  background-image: url(https://kayserltda.vteximg.com.br/arquivos/Si%20llegamos%20a%20xxL%201300x600_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
 }

@@ -64,6 +64,17 @@
 .flexRowContent--top-menu :global(.vtex-menu-2-x-menuItem):first-child :global(.vtex-menu-2-x-styledLinkContent){
   border-left: 2px solid #8e8e8e;
 }
+
+.flexRowContent--top-menu :global(.vtex-rich-text-0-x-paragraph--topbar-left){
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 80%;
+}
+
 .flexRowContent--navbar :global(.vtex-menu-2-x-styledLink){
   color: #4d4d4d;
   font-weight: bold;

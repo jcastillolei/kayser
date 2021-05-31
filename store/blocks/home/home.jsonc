@@ -4,10 +4,12 @@
       "list-context.image-list#carousel-main",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "rich-text#shelf-title-recomendados",
+       "flex-layout.row#row-xxl",
+       "rich-text#shelf-title-recomendados",
       "flex-layout.row#shelf-recomendados"
     ]
   },
+
 
   "list-context.image-list#carousel-main": {
     "children": ["slider-layout#carousel-images"],
@@ -57,6 +59,7 @@
       "blockClass": "shelfTitle"
     }
   },
+
   "flex-layout.row#shelf-recomendados": {
     "children": ["list-context.product-list#productos-recomendados"]
   },
@@ -77,6 +80,49 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  },
+
+
+  "flex-layout.row#row-xxl":{
+    "children": ["image#img-xxl", "flex-layout.row#shelf-xxl"],
+    "props": {
+      "marginTop": 7
+    }
+  },
+
+  "image#img-xxl":{
+    "props": {
+      "src": "https://www.kaysershop.com/arquivos/colecci%C3%B3n%20XXL.png?v=637535880939170000"
+    }
+  },
+
+  "flex-layout.row#shelf-xxl": {
+    "children": ["list-context.product-list#productos-xxl"],
+    "props":{ 
+      "width": "80%",
+      "blockClass": "xxl-vitrina"
+    }
+  },
+  "list-context.product-list#productos-xxl": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#productos-xxl"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#productos-xxl": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf-xxl",
       "showNavigationArrows": "always",
       "showPaginationDots": "never"
     }
