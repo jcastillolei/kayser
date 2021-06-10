@@ -44,6 +44,7 @@
   padding-right: .5rem;
 }
 
+
 /* p r o d u c t o s   r e c o m e n d a d o s */
 .sliderLayoutContainer--shelf-xxl
 .slide--shelf-xxl
@@ -154,10 +155,33 @@
   padding-right: 0px !important;
 }
 
-:global(.vtex-flex-layout-0-x-flexRow--xxl-vitrina){
-  background-image: url(https://kayserltda.vteximg.com.br/arquivos/Si%20llegamos%20a%20xxL%201300x600_1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 1rem;
+@media(min-width: 991px){
+  :global(.vtex-flex-layout-0-x-flexRow--xxl-vitrina){
+    background-image: url(https://kayserltda.vteximg.com.br/arquivos/Si%20llegamos%20a%20xxL%201300x600_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+  }
+}
+
+.slide--shelf-xxl{
+  margin-left: 1rem;
+  margin-right: 1px;
+}
+
+.slide--shelf-xxl :global(.vtex-button){
+  margin: 0 auto;
+  width: 85%;
+}
+
+@media(max-width: 991px){
+  .slide--shelf,
+  .slide--shelf-xxl{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }

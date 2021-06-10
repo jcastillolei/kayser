@@ -9,6 +9,7 @@
       "add-to-cart-button#comprar"
     ]
   },
+
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
@@ -32,20 +33,12 @@
   },
 
   "vtex.product-highlights@2.x:product-highlights#collection": {
-    "props": {
-      "type": "collection"
-    },
-    "children": ["product-highlight-wrapper"]
-  },
-  "product-highlight-wrapper": {
-    "props": {
-      "blockClass": "collection"
-    },
     "children": ["product-highlight-text"]
   },
   "product-highlight-text": {
     "props": {
-      "message": "{highlightName}"
+      "message": "{highlightName}",
+      "blockClass": "banderin"
     }
   },
 
@@ -59,7 +52,8 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "blockClass": "selling-price"
     },
     "children": [
       "product-selling-price#summary",

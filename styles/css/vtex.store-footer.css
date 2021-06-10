@@ -146,6 +146,164 @@
   padding-top: 0;
 }
 
+/* footer: busquedas */
+:global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer){
+  border-top: 1px solid #2a86e4;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
+:global(.vtex-menu-2-x-menuContainer){
+  justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
+:global(.vtex-menu-2-x-styledLinkContent)::after{
+  content: '-';
+  margin-left: 1.1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
+:global(.vtex-menu-2-x-styledLinkContainer){
+  margin-left: 0px;
+  margin-right: 0px;  
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
+:global(.vtex-menu-2-x-styledLinkContent){
+  align-items: center;
+  color: #4d4d44;
+  font-family: 'Raleway',sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  justify-content: start;
+  padding: .5rem .7rem;
+}
+
 .row--payment-methods {
   padding-top: 16px;
+}
+
+
+/* footer mobile */
+.footerLayout--footer-mobile{
+  background-color: #f4f4f4;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-styledLinkContent){
+  align-items: center;
+  color: #4d4d44;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  justify-content: start;
+  padding: .7rem 0;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-menuItem){
+  border-bottom: 1px solid #ccc;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-menuItem--menu-title-catalogo){
+  border-bottom: none;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-imageElement--img-catalogo){
+  margin-left: 1.5rem;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainerNav)
+:global(.vtex-menu-2-x-menuItem--menu-title)
+:global(.vtex-menu-2-x-styledLinkContent),
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuItem--menu-title-catalogo)
+:global(.vtex-menu-2-x-styledLinkContent){
+  color: #666;
+  cursor: default;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15.6px;
+  font-weight: 800;
+  margin-top: 1.5rem;
+  white-space: break-spaces;
+  width: 40%;
+}
+
+/* footer mobile: newsletter */
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-label){
+  color: #666;
+  display: block;
+  font-family: 'Raleway',sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  width: 60%;
+  white-space: break-spaces;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-inputGroup) 
+:global(.vtex-styleguide-9-x-hideDecorators){
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-input-prefix__group){
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  margin-bottom: .5rem;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-newsletter) 
+:global(.vtex-button){
+  background: #2a86e4;
+    border-radius: 0;
+    color: white;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    min-height: 30px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-newsletter) 
+:global(.vtex-button__label){
+  justify-content: flex-start;
+}
+
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-styleguide-9-x-input)::placeholder{
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  text-align: left;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-newsletter) 
+:global(.vtex-store-components-3-x-inputGroup){
+  display: block;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-inputGroup){
+  padding-top: .4rem;
 }

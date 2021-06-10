@@ -13,6 +13,12 @@
   width: 80%;
 }
 
+@media(max-width: 991px){
+  .container{
+    width: 95%;
+  }
+}
+
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
@@ -112,4 +118,21 @@
 :global(.vtex-product-context-provider)
 .container{
   max-width: 90%;
+}
+
+.sizeDesktop{
+  padding-left: 0px;
+}
+
+.imageElement--lovelust-img{
+  margin-left: 1rem;
+}
+
+.skuSelectorItemImageValue{
+  position: relative;
+  top: -17px;
+}
+
+:global(.vtex-toast){
+  background-color: #2a86e4;
 }

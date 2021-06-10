@@ -48,7 +48,7 @@
   },
   "rich-text#topbar-left":{
     "props": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique lectus sed leo rhoncus, ac suscipit justo imperdiet. Sed dignissim cursus urna ac tincidunt. Phasellus.",
+      "text": "ESTAMOS TOMANDO TODAS LAS MEDIDAS SANITARIAS NECESARIAS PARA HACER DESPACHOS SEGUROS EN EL MENOR TIEMPO POSIBLE. ES POR ELLO QUE LAS ENTREGAS PODRÍAN DEMORAR ENTRE 7 A 10 DÍAS HÁBILES.",
       "blockClass": "topbar-left"
     }
   },
@@ -157,8 +157,8 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "menu-item#account-mobile",
+      "minicart.v2#mobile"
     ],
     "props": {
       "blockClass": "navbar-mobile",
@@ -169,6 +169,39 @@
   },
   "drawer": {
     "children": ["menu#drawer"]
+  },
+
+  "menu-item#account-mobile": {
+    "props": {
+      "id": "menu-item-orders",
+      "blockClass": "orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "size": 20,
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": false
+      }
+    }
+  },
+
+  "minicart.v2#mobile":{
+    "props": {
+      "MinicartIcon": "icon-cart#minicart-icon-mobile"
+    }
+  },
+  "icon-cart#minicart-icon-mobile": {
+    "props": {
+      "id": "hpa-cart",
+      "size": 20,
+      "viewBox": "0 0 24 16"
+    }
   },
 
   "menu#drawer": {
@@ -187,7 +220,7 @@
       "title": "Logo Kayser",
       "href": "/",
       "url": "https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000C8F/es-PE/images/logo/logo.png",
-      "width": "70"
+      "width": "120"
     }
   }
 }

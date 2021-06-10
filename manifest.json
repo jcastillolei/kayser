@@ -10,7 +10,8 @@
   },
   "mustUpdateAt": "2021-05-04",
   "scripts": {
-    "postreleasy": "vtex publish --verbose"
+    "postreleasy": "vtex publish --verbose",
+    "login": "vtex login kaysertest"
   },
   "dependencies": {
     "vtex.store": "2.x",

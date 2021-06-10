@@ -88,32 +88,50 @@
   padding: 1.5rem;
 }
 
+.modal--modal-como-comprar
+:global(.vtex-store-components-3-x-imageElement),
 .modal--modal-pdp
 :global(.vtex-store-components-3-x-imageElement){
   align-self: center;
 }
+
+.modal--modal-como-comprar
+.closeIcon,
 .modal--modal-pdp
 .closeIcon{
   color: #ccc;
   transition: color .2s ease-out;
 }
+.modal--modal-como-comprar
+:global(.vtex-iframe-0-x-container),
 .modal--modal-pdp
 :global(.vtex-iframe-0-x-container){
   padding: 2rem;
 }
+.modal--modal-como-comprar
+.closeIcon:hover,
 .modal--modal-pdp
 .closeIcon:hover{
   color: rgb(255, 0, 0);
 }
+
+.modal--modal-como-comprar
+.headerContainer,
 .modal--modal-pdp
 .headerContainer{
   border: none;
 }
+
+.modal--modal-como-comprar
+:global(.vtex-rich-text-0-x-container),
 .modal--modal-pdp
 :global(.vtex-rich-text-0-x-container){
   align-self: center;
   color: #595959;
 }
+
+.modal--modal-como-comprar
+:global(.vtex-rich-text-0-x-heading),
 .modal--modal-pdp
 :global(.vtex-rich-text-0-x-heading){
   font-family: 'Raleway', sans-serif;
@@ -129,6 +147,21 @@
   background-color: transparent;
 }
 
+.backdrop--modal-como-comprar,
 .backdrop--modal-pdp{
   background-color: rgba(0,0,0,.4);
+}
+
+.triggerContainer
+:global(.vtex-store-components-3-x-imageElement--img-como-comprar){
+  box-shadow: 1px 1px 2px rgba(85, 85, 85, 0.4);
+  cursor: pointer;
+  width: -webkit-fill-available;
+}
+
+@media(max-width: 991px){
+  .triggerContainer
+  :global(.vtex-store-components-3-x-imageElement--img-como-comprar){
+    display: none;
+  }
 }

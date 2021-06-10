@@ -19,8 +19,7 @@
 
 .nameContainer {
   justify-content: start;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .brandName {
@@ -39,4 +38,8 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.containerNormal{
+  border-radius: 0px;
 }

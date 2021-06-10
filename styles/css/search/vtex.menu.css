@@ -6,7 +6,7 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--navbar) 
 .submenuWrapper--isOpen{
     border: 1px solid #ccc;
-    margin-top: 7px;
+    /* margin-top: 7px; */
     padding: 2rem;
 }
 
@@ -14,4 +14,43 @@
 .submenuWrapper--isOpen
 .menuItem{
     align-self: start;
+}
+
+/* submenú para desktop */
+@media(min-width: 991px){
+    .submenuContainer
+    :global(.vtex-flex-layout-0-x-flexRow){
+        width: 100%;
+    }
+}
+
+/* header desktop */
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile)
+.styledLinkContainer--orders{
+    margin-left: 0;
+    margin-right: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile)
+:global(.vtex-minicart-2-x-minicartContainer)
+:global(.vtex-button__label){
+    padding-left: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar-mobile)
+:global(.vtex-minicart-2-x-minicartContainer)
+:global(.vtex-minicart-2-x-minicartIconContainer){
+    color: #3F3F40;
+}
+
+.menuContainerNav--rrss-footer{
+    margin-bottom: 1rem;
+}
+.menuContainer--rrss-footer
+.styledLinkContainer{
+    margin-right: 0px;
+}
+
+.menuContainerNav--rrss-footer
+.menuItem:nth-child(even)
+.styledLinkContainer{
+    margin-left: 0px;
 }

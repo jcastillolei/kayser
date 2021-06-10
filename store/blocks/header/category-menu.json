@@ -29,7 +29,7 @@
   },
   "menu-item#mujer": {
     "props": {
-      "id": "menu-item-category-home",
+      "id": "menu-item-category-mujer",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -50,37 +50,86 @@
       "width": "100%"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "flex-layout.row#menu-mujer"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "flex-layout.row#menu-mujer":{
+    "children":[
+      "flex-layout.col#menu-mujer-1",
+      "flex-layout.col#menu-mujer-2",
+      "flex-layout.col#menu-mujer-3",
+      "flex-layout.col#menu-mujer-4",
+      "flex-layout.col#menu-mujer-5"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.col#menu-mujer-1":{
+    "children": ["vtex.menu@2.x:menu#mujer"]
+  },
+
+  "flex-layout.col#menu-mujer-2":{
+    "children": ["vtex.menu@2.x:menu#mujer-2"]
+  },
+
+  "flex-layout.col#menu-mujer-3":{
+    "children": ["vtex.menu@2.x:menu#mujer-3"]
+  },
+
+  "flex-layout.col#menu-mujer-4":{
+    "children": ["vtex.menu@2.x:menu#mujer-4"]
+  },
+
+  "flex-layout.col#menu-mujer-5":{
+    "children": ["vtex.menu@2.x:menu#mujer-5"]
+  },
+
+  "vtex.menu@2.x:menu#mujer": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#sosten-title",
+      "menu-item#bralette",
+      "menu-item#microfibra",
+      "menu-item#push-up",
+      "menu-item#soft",
+      "menu-item#sin-soft",
+      "menu-item#strapless",
+      "menu-item#tull",
+      "menu-item#jacquard",
+      "menu-item#todo-sosten",
+      "menu-item#linea-maternal-title",
+      "menu-item#sosten",
+      "menu-item#calzon",
+      "menu-item#todo-maternal"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#sosten-title": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "blockClass": "header-title",
+      "id": "menu-item-sosten-title",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "iconProps":{
+        "id": "sosten-icon",
+        "viewBox": "20 -20 120 120"
+      },
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Sostén",
+        "text": "Sostén"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#bralette": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-bralette",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -88,14 +137,14 @@
         "type": "internal",
         "href": "/apparel---accessories/accessories/",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "Bralette",
+        "text": "Bralette"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#microfibra": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-microfibra",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -103,12 +152,957 @@
         "type": "internal",
         "href": "/apparel---accessories/eyeglasses/",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "Microfibra",
+        "text": "Microfibra"
+      }
+    }
+  },
+  "menu-item#push-up": {
+    "props": {
+      "id": "menu-item-push-up",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Push Up",
+        "text": "Push Up"
+      }
+    }
+  },
+  "menu-item#soft": {
+    "props": {
+      "id": "menu-item-soft",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Soft",
+        "text": "Soft"
+      }
+    }
+  },
+  "menu-item#sin-soft": {
+    "props": {
+      "id": "menu-item-sin-soft",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Sin Soft",
+        "text": "Sin Soft"
+      }
+    }
+  },
+  "menu-item#strapless": {
+    "props": {
+      "id": "menu-item-strapless",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Strapless",
+        "text": "Strapless"
+      }
+    }
+  },
+  "menu-item#tull": {
+    "props": {
+      "id": "menu-item-tull",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Tull",
+        "text": "Tull"
+      }
+    }
+  },
+  "menu-item#jacquard": {
+    "props": {
+      "id": "menu-item-jacquard",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Jacquard",
+        "text": "Jacquard"
+      }
+    }
+  },
+  "menu-item#todo-sosten": {
+    "props": {
+      "id": "menu-item-todo-sosten",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Sostén",
+        "text": "Todo Sostén"
+      }
+    }
+  },
+  "menu-item#linea-maternal-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-linea-maternal-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "maternal-icon",
+        "viewBox": "20 10 80 80"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Línea Maternal",
+        "text": "Línea Maternal"
+      }
+    }
+  },
+  "menu-item#sosten": {
+    "props": {
+      "id": "menu-item-sosten",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Sostén",
+        "text": "Sostén"
+      }
+    }
+  },
+  "menu-item#calzon": {
+    "props": {
+      "id": "menu-item-calzon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Calzón",
+        "text": "Calzón"
+      }
+    }
+  },
+  "menu-item#todo-maternal": {
+    "props": {
+      "id": "menu-item-todo-maternal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Línea Maternal",
+        "text": "Todo Línea Maternal"
       }
     }
   },
   
+  "vtex.menu@2.x:menu#mujer-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calzon-title",
+      "menu-item#bikini",
+      "menu-item#colaless",
+      "menu-item#cuolotte",
+      "menu-item#hi-leggs",
+      "menu-item#maxi",
+      "menu-item#pantaletas",
+      "menu-item#todo-calzon",
+      "menu-item#linea-control-title",
+      "menu-item#calzon-2",
+      "menu-item#camiseta",
+      "menu-item#todo-control"
+    ]
+  },
+  "menu-item#calzon-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-calzon-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "calzon-icon",
+        "viewBox": "0 0 134 75"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Calzón",
+        "text": "Calzón"
+      }
+    }
+  },
+  "menu-item#bikini": {
+    "props": {
+      "id": "menu-item-bikini",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Bikini",
+        "text": "Bikini"
+      }
+    }
+  },
+  "menu-item#colaless": {
+    "props": {
+      "id": "menu-item-colaless",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Colaless",
+        "text": "Colaless"
+      }
+    }
+  },
+  "menu-item#cuolotte": {
+    "props": {
+      "id": "menu-item-cuolotte",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Cuolotte",
+        "text": "Cuolotte"
+      }
+    }
+  },
+  "menu-item#hi-leggs": {
+    "props": {
+      "id": "menu-item-hi-leggs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Hi Leggs",
+        "text": "Hi Leggs"
+      }
+    }
+  },
+  "menu-item#maxi": {
+    "props": {
+      "id": "menu-item-maxi",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Maxi",
+        "text": "Maxi"
+      }
+    }
+  },
+  "menu-item#pantaletas": {
+    "props": {
+      "id": "menu-item-pantaletas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Pantaletas",
+        "text": "Pantaletas"
+      }
+    }
+  },
+  "menu-item#todo-calzon": {
+    "props": {
+      "id": "menu-item-todo-calzon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Calzón",
+        "text": "Todo Calzón"
+      }
+    }
+  },
+  "menu-item#linea-control-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-linea-control-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "control-icon",
+        "viewBox": "40 10 90 90"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Línea Control",
+        "text": "Línea Control"
+      }
+    }
+  },
+  "menu-item#calzon-2": {
+    "props": {
+      "id": "menu-item-calzon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Calzón",
+        "text": "Calzón"
+      }
+    }
+  },
+  "menu-item#camiseta": {
+    "props": {
+      "id": "menu-item-camiseta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Camiseta",
+        "text": "Camiseta"
+      }
+    }
+  },
+  "menu-item#todo-control": {
+    "props": {
+      "id": "menu-item-todo-control",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Línea Control",
+        "text": "Todo Línea Control"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#mujer-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#pijamas-batas-title",
+      "menu-item#algodon-mujer",
+      "menu-item#polar-mujer",
+      "menu-item#camisa-mujer",
+      "menu-item#camisola",
+      "menu-item#batas-mujer",
+      "menu-item#pantuflas",
+      "menu-item#todo-pijamas-mujer",
+      "menu-item#camisetas-mujer-title",
+      "menu-item#manga-larga-mujer",
+      "menu-item#termica",
+      "menu-item#sin-manga",
+      "menu-item#todo-camisetas-mujer"
+    ]
+  },
+  "menu-item#pijamas-batas-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-pijamas-batas-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "pijamas-icon",
+        "viewBox": "30 0 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Pijamas y Batas",
+        "text": "Pijamas y Batas"
+      }
+    }
+  },
+  "menu-item#algodon-mujer": {
+    "props": {
+      "id": "menu-item-algodon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Camisa",
+        "text": "Camisa"
+      }
+    }
+  },
+  "menu-item#polar-mujer": {
+    "props": {
+      "id": "menu-item-polar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Polar",
+        "text": "Polar"
+      }
+    }
+  },
+  "menu-item#camisa-mujer": {
+    "props": {
+      "id": "menu-item-camisa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Cuolotte",
+        "text": "Cuolotte"
+      }
+    }
+  },
+  "menu-item#camisola": {
+    "props": {
+      "id": "menu-item-camisola",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Camisola",
+        "text": "Camisola"
+      }
+    }
+  },
+  "menu-item#batas-mujer": {
+    "props": {
+      "id": "menu-item-batas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Batas",
+        "text": "Batas"
+      }
+    }
+  },
+  "menu-item#pantuflas": {
+    "props": {
+      "id": "menu-item-pantuflas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Pantuflas",
+        "text": "Pantuflas"
+      }
+    }
+  },
+  "menu-item#todo-pijamas-mujer": {
+    "props": {
+      "id": "menu-item-todo-pijamas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Pijamas",
+        "text": "Todo Pijamas"
+      }
+    }
+  },
+  "menu-item#camisetas-mujer-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-camisetas-mujer-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "camiseta-icon",
+        "viewBox": "40 0 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+  "menu-item#manga-larga-mujer": {
+    "props": {
+      "id": "menu-item-manga-larga",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Manga Larga",
+        "text": "Manga Larga"
+      }
+    }
+  },
+  "menu-item#termica": {
+    "props": {
+      "id": "menu-item-termica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Térmica",
+        "text": "Térmica"
+      }
+    }
+  },
+  "menu-item#sin-manga": {
+    "props": {
+      "id": "menu-item-sin-manga",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Sin Manga",
+        "text": "Sin Manga"
+      }
+    }
+  },
+  "menu-item#todo-camisetas-mujer": {
+      "props": {
+        "id": "menu-item-todo-camisetas",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/eyeglasses/",
+          "noFollow": false,
+          "tagTitle": "Todo Camisetas Mujer",
+          "text": "Todo Camisetas Mujer"
+        }
+      }
+  },
+
+  "vtex.menu@2.x:menu#mujer-4": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calcetines-pantys-title",
+      "menu-item#calcetines-cortos-mujer",
+      "menu-item#calcetines-largos-mujer",
+      "menu-item#invisibles-mujer",
+      "menu-item#deportivos-mujer",
+      "menu-item#bamboo-mujer",
+      "menu-item#cobre-mujer",
+      "menu-item#mini-medias-mujer",
+      "menu-item#pantys-lisas-mujer",
+      "menu-item#todo-calcetines-mujer",
+      "image#love-lust",
+      "menu-item#body-mujer",
+      "menu-item#bandas-mujer",
+      "menu-item#todo-love-lust"
+    ]
+  },
+  "menu-item#calcetines-pantys-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-calcetines-pantys-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "calcetines-icon",
+        "viewBox": "50 0 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Calcetines y Pantys",
+        "text": "Calcetines y Pantys"
+      }
+    }
+  },
+  "menu-item#calcetines-cortos-mujer": {
+    "props": {
+      "id": "menu-item-calcetines-cortos-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Calcetines Cortos",
+        "text": "Calcetines Cortos"
+      }
+    }
+  },
+  "menu-item#calcetines-largos-mujer": {
+    "props": {
+      "id": "menu-item-calcetines-largos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Calcetines Largos",
+        "text": "Calcetines Largos"
+      }
+    }
+  },
+  "menu-item#invisibles-mujer": {
+    "props": {
+      "id": "menu-item-invisibles-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Invisibles",
+        "text": "Invisibles"
+      }
+    }
+  },
+  "menu-item#deportivos-mujer": {
+    "props": {
+      "id": "menu-item-deportivos-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Deportivos",
+        "text": "Deportivos"
+      }
+    }
+  },
+  "menu-item#bamboo-mujer": {
+    "props": {
+      "id": "menu-item-bamboo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Bamboo",
+        "text": "Bamboo"
+      }
+    }
+  },
+  "menu-item#cobre-mujer": {
+    "props": {
+      "id": "menu-item-cobre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Cobre",
+        "text": "Cobre"
+      }
+    }
+  },
+  "menu-item#mini-medias-mujer": {
+    "props": {
+      "id": "menu-item-mini-medias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Mini Medias",
+        "text": "Mini Medias"
+      }
+    }
+  },
+  "menu-item#pantys-lisas-mujer": {
+    "props": {
+      "id": "menu-item-pantys-lisas-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Pantys Lisas",
+        "text": "Pantys Lisas"
+      }
+    }
+  },
+  "menu-item#todo-calcetines-mujer": {
+    "props": {
+      "id": "menu-item-todo-calcetines",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Calcetines y Pantys",
+        "text": "Todo Calcetines y Pantys"
+      }
+    }
+  },
+
+  "image#love-lust":{
+      "props":{
+        "src": "https://kayserltda.vteximg.com.br/arquivos/logo-lovelust.png",
+        "width": 80,
+        "blockClass": "lovelust-img"
+      }
+  },
+  "menu-item#body-mujer": {
+    "props": {
+      "id": "menu-item-body",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Body",
+        "text": "Body"
+      }
+    }
+  },
+  "menu-item#bandas-mujer": {
+    "props": {
+      "id": "menu-item-bandas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Bandas",
+        "text": "Bandas"
+      }
+    }
+  },
+  "menu-item#todo-love-lust": {
+    "props": {
+      "id": "menu-item-todo-maternal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Love Lust",
+        "text": "Todo Love Lust"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#mujer-5": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#accesorios-mujer-title",
+      "menu-item#botas-mujer",
+      "menu-item#breteles-mujer",
+      "menu-item#broches-mujer",
+      "menu-item#otros-mujer",
+      "menu-item#todo-accesorios-mujer"
+    ]
+  },
+  "menu-item#accesorios-mujer-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-accesorios-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "calzon-icon",
+        "viewBox": "0 0 130 75"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  },
+  "menu-item#botas-mujer": {
+    "props": {
+      "id": "menu-item-botas-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Botas",
+        "text": "Botas"
+      }
+    }
+  },
+  "menu-item#breteles-mujer": {
+    "props": {
+      "id": "menu-item-breteles",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Breteles",
+        "text": "Breteles"
+      }
+    }
+  },
+  "menu-item#broches-mujer": {
+    "props": {
+      "id": "menu-item-broches-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Broches",
+        "text": "Broches"
+      }
+    }
+  },
+  "menu-item#otros-mujer": {
+    "props": {
+      "id": "menu-item-otros-mujer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Otros",
+        "text": "Otros"
+      }
+    }
+  },
+  "menu-item#todo-accesorios-mujer": {
+    "props": {
+      "id": "menu-item-todo-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Accesorios",
+        "text": "Todo Accesorios"
+      }
+    }
+  },
+
+
   "menu-item#hombre": {
     "props": {
       "id": "menu-item-hombre",
@@ -128,7 +1122,7 @@
     ]
   },
   "vtex.menu@2.x:submenu#hombre": {
-    "props": {
+    "props":{
       "width": "100%"
     },
     "children": [
@@ -141,13 +1135,8 @@
       "flex-layout.col#menu-hombre-2",
       "flex-layout.col#menu-hombre-3",
       "flex-layout.col#menu-hombre-4",
-      "flex-layout.col#menu-hombre-5",
-      "flex-layout.row#boton-hombre",
-      "flex-layout.row#image-hombre"
-    ],
-    "props":{
-      "preventHorizontalStretch": true
-    }
+      "flex-layout.col#menu-hombre-5"
+    ]
   },
   "flex-layout.col#menu-hombre-1": {
     "children": [
@@ -176,7 +1165,8 @@
   },
   "vtex.menu@2.x:menu#hombre": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "col-5"
     },
     "children": [
       "menu-item#boxer-title",
@@ -198,8 +1188,8 @@
       "iconId": null,
       "highlight": false,
       "iconProps":{
-        "id": "hpa-login",
-        "viewBox": "0 0 24 16"
+        "id": "boxer-icon",
+        "viewBox": "25 0 95 95"
       },
       "itemProps": {
         "type": "internal",
@@ -332,7 +1322,8 @@
   },
   "vtex.menu@2.x:menu#hombre-2": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "col-5"
     },
     "children": [
       "menu-item#calcetines-title",
@@ -354,8 +1345,8 @@
       "iconId": null,
       "highlight": false,
       "iconProps":{
-        "id": "hpa-login",
-        "viewBox": "0 0 24 16"
+        "id": "calcetines-icon",
+        "viewBox": "50 0 95 95"
       },
       "itemProps": {
         "type": "internal",
@@ -459,7 +1450,8 @@
 
   "vtex.menu@2.x:menu#hombre-3": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "col-5"
     },
     "children": [
       "menu-item#pijamas-title",
@@ -477,8 +1469,8 @@
       "iconId": null,
       "highlight": false,
       "iconProps":{
-        "id": "hpa-login",
-        "viewBox": "0 0 24 16"
+        "id": "pijamas-icon",
+        "viewBox": "30 0 95 95"
       },
       "itemProps": {
         "type": "internal",
@@ -551,7 +1543,8 @@
   },
   "vtex.menu@2.x:menu#hombre-4": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "col-5"
     },
     "children": [
       "menu-item#slip-title",
@@ -567,8 +1560,8 @@
       "iconId": null,
       "highlight": false,
       "iconProps":{
-        "id": "hpa-login",
-        "viewBox": "0 0 24 16"
+        "id": "slip-icon",
+        "viewBox": "10 0 130 75"
       },
       "itemProps": {
         "type": "internal",
@@ -612,7 +1605,8 @@
 
   "vtex.menu@2.x:menu#hombre-5": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "col-5"
     },
     "children": [
       "menu-item#camisetas-title",
@@ -629,8 +1623,8 @@
       "iconId": null,
       "highlight": false,
       "iconProps":{
-        "id": "hpa-login",
-        "viewBox": "0 0 24 16"
+        "id": "camisetas-h-icon",
+        "viewBox": "30 0 95 95"
       },
       "itemProps": {
         "type": "internal",
@@ -720,8 +1714,620 @@
         "tagTitle": "kids",
         "text": "Teen & Kids"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#kids"
+    ]
+  },
+  "vtex.menu@2.x:submenu#kids": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-kids"
+    ]
+  },
+  "flex-layout.row#menu-kids":{
+    "children":[
+      "flex-layout.col#menu-kids-1",
+      "flex-layout.col#menu-kids-2",
+      "flex-layout.col#menu-kids-3",
+      "flex-layout.col#menu-kids-4"
+    ]
+  },
+
+  "flex-layout.col#menu-kids-1":{
+    "children": ["vtex.menu@2.x:menu#kids"]
+  },
+
+  "flex-layout.col#menu-kids-2":{
+    "children": ["vtex.menu@2.x:menu#kids-2"]
+  },
+
+  "flex-layout.col#menu-kids-3":{
+    "children": ["vtex.menu@2.x:menu#kids-3"]
+  },
+
+  "flex-layout.col#menu-kids-4":{
+    "children": ["vtex.menu@2.x:menu#kids-4"]
+  },
+  "vtex.menu@2.x:menu#kids": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#kids-hombre-title",
+      "menu-item#boxer-kids",
+      "menu-item#calcetines-kids-hombre",
+      "menu-item#camisetas-kids-hombre",
+      "menu-item#slip-kids",
+      "menu-item#pijamas-kids-hombre",
+      "menu-item#calzoncillos-kids",
+      "menu-item#batas-kids-hombre",
+      "menu-item#los-simpson-kids",
+      "menu-item#todo-kids-hombre"
+    ]
+  },
+  "menu-item#kids-hombre-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-kids-hombre-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "nino-icon",
+        "viewBox": "30 0 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Kids Hombre",
+        "text": "Kids Hombre"
+      }
     }
   },
+  "menu-item#boxer-kids": {
+    "props": {
+      "id": "menu-item-boxer-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Boxer",
+        "text": "Boxer"
+      }
+    }
+  },
+  "menu-item#calcetines-kids-hombre": {
+    "props": {
+      "id": "menu-item-calcetines-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Calcetines",
+        "text": "Calcetines"
+      }
+    }
+  },
+  "menu-item#camisetas-kids-hombre": {
+    "props": {
+      "id": "menu-item-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+  "menu-item#slip-kids": {
+    "props": {
+      "id": "menu-item-slip",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Slip",
+        "text": "Slip"
+      }
+    }
+  },
+  "menu-item#pijamas-kids-hombre": {
+    "props": {
+      "id": "menu-item-pijamas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Pijamas",
+        "text": "Pijamas"
+      }
+    }
+  },
+  "menu-item#calzoncillos-kids": {
+    "props": {
+      "id": "menu-item-slip",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Calzoncillos",
+        "text": "Calzoncillos"
+      }
+    }
+  },
+  "menu-item#batas-kids-hombre": {
+    "props": {
+      "id": "menu-item-batas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Batas",
+        "text": "Batas"
+      }
+    }
+  },
+  "menu-item#los-simpson-kids": {
+    "props": {
+      "id": "menu-item-los-simpson",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Los Simpson",
+        "text": "Los Simpson"
+      }
+    }
+  },
+  "menu-item#todo-kids-hombre": {
+    "props": {
+      "id": "menu-item-todo-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Kids Hombre",
+        "text": "Todo Kids Hombre"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#kids-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#kids-mujer-title",
+      "menu-item#bikini-kids",
+      "menu-item#calcetines-kids-mujer",
+      "menu-item#pijamas-kids-mujer",
+      "menu-item#todo-kids-mujer"
+    ]
+  },
+  "menu-item#kids-mujer-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-kids-mujer-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "nina-icon",
+        "viewBox": "15 0 120 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Kids Mujer",
+        "text": "Kids Mujer"
+      }
+    }
+  },
+  "menu-item#bikini-kids": {
+    "props": {
+      "id": "menu-item-bikini-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Bikini",
+        "text": "Bikini"
+      }
+    }
+  },
+  "menu-item#calcetines-kids-mujer": {
+    "props": {
+      "id": "menu-item-calcetines-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Calcetines",
+        "text": "Calcetines"
+      }
+    }
+  },
+  "menu-item#pijamas-kids-mujer": {
+    "props": {
+      "id": "menu-item-pijamas-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Pijamas",
+        "text": "Pijamas"
+      }
+    }
+  },
+  "menu-item#todo-kids-mujer": {
+    "props": {
+      "id": "menu-item-todo-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Kids Mujer",
+        "text": "Todo Kids Mujer"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#kids-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#teens-hombre-title",
+      "menu-item#boxer-teens",
+      "menu-item#calcetines-teens-hombre",      
+      "menu-item#pijamas-teens-hombre",
+      "menu-item#calzoncillos-largos-teens",
+      "menu-item#camisetas-teens-hombre",
+      "menu-item#los-simpson-teens",
+      "menu-item#todo-teens-hombre"
+    ]
+  },
+  "menu-item#teens-hombre-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-teens-hombre-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hombre-icon",
+        "viewBox": "30 0 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Teens Hombre",
+        "text": "Teens Hombre"
+      }
+    }
+  },
+  "menu-item#boxer-teens": {
+    "props": {
+      "id": "menu-item-boxer-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Boxer",
+        "text": "Boxer"
+      }
+    }
+  },
+  "menu-item#calcetines-teens-hombre": {
+    "props": {
+      "id": "menu-item-calcetines-teens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Calcetines",
+        "text": "Calcetines"
+      }
+    }
+  },
+  "menu-item#pijamas-teens-hombre": {
+    "props": {
+      "id": "menu-item-pijamas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Pijamas",
+        "text": "Pijamas"
+      }
+    }
+  },
+  "menu-item#calzoncillos-largos-teens": {
+    "props": {
+      "id": "menu-item-calzoncillos-largos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Calzoncillos Largos",
+        "text": "Calzoncillos Largos"
+      }
+    }
+  },
+  "menu-item#camisetas-teens-hombre": {
+    "props": {
+      "id": "menu-item-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+  "menu-item#los-simpson-teens": {
+    "props": {
+      "id": "menu-item-los-simpson",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Los Simpson",
+        "text": "Los Simpson"
+      }
+    }
+  },
+  "menu-item#todo-teens-hombre": {
+    "props": {
+      "id": "menu-item-todo-teens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Teens Hombre",
+        "text": "Todo Teens Hombre"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#kids-4": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#teens-mujer-title",
+      "menu-item#calcetines-teens-mujer",
+      "menu-item#pantaletas-teens-mujer",
+      "menu-item#pijamas-teens-mujer",
+      "menu-item#sostenes-teens",
+      "menu-item#calzon-teens",
+      "menu-item#camisetas-teens-mujer",
+      "menu-item#panty-teens-mujer",
+      "menu-item#bucanera-teens-mujer",
+      "menu-item#todo-teens-mujer"
+    ]
+  },
+  "menu-item#teens-mujer-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-teens-mujer-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "mujer-icon",
+        "viewBox": "35 5 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Teens Mujer",
+        "text": "Teens Mujer"
+      }
+    }
+  },
+  "menu-item#calcetines-teens-mujer": {
+    "props": {
+      "id": "menu-item-calcetines",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Calcetines",
+        "text": "Calcetines"
+      }
+    }
+  },
+  "menu-item#pantaletas-teens-mujer": {
+    "props": {
+      "id": "menu-item-pantaletas-teens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Pantaletas",
+        "text": "Pantaletas"
+      }
+    }
+  },
+  "menu-item#pijamas-teens-mujer": {
+    "props": {
+      "id": "menu-item-pijama",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Pijama",
+        "text": "Pijama"
+      }
+    }
+  },
+  "menu-item#sostenes-teens": {
+    "props": {
+      "id": "menu-item-sostenes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Sostenes",
+        "text": "Sostenes"
+      }
+    }
+  },
+  "menu-item#calzon-teens": {
+    "props": {
+      "id": "menu-item-calzon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Calzón",
+        "text": "Calzón"
+      }
+    }
+  },
+  "menu-item#camisetas-teens-mujer": {
+    "props": {
+      "id": "menu-item-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      }
+    }
+  },
+  "menu-item#panty-teens-mujer": {
+    "props": {
+      "id": "menu-item-panty",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Panty",
+        "text": "Panty"
+      }
+    }
+  },
+  "menu-item#bucanera-teens-mujer": {
+    "props": {
+      "id": "menu-item-bucanera",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Bucanera",
+        "text": "Bucanera"
+      }
+    }
+  },
+  "menu-item#todo-teens-mujer": {
+    "props": {
+      "id": "menu-item-todo-teens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Teens Mujer",
+        "text": "Todo Teens Mujer"
+      }
+    }
+  },
+
 
   "menu-item#otras": {
     "props": {
@@ -731,8 +2337,8 @@
       "highlight": false,
       "blockClass": "otras",
       "iconProps":{
-        "id": "hpa-hamburguer-menu",
-        "viewBox": "0 0 16 16"
+        "id": "menu-kayser",
+        "viewBox": "40 20 65 65"
       },
       "itemProps": {
         "type": "internal",
@@ -741,9 +2347,559 @@
         "tagTitle": "otras",
         "text": "Otras Categorias"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#otras"
+    ]
+  },
+  "vtex.menu@2.x:submenu#otras": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-otras"
+    ]
+  },
+  "flex-layout.row#menu-otras":{
+    "children":[
+      "flex-layout.col#menu-otras-1",
+      "flex-layout.col#menu-otras-2",
+      "flex-layout.col#menu-otras-3",
+      "flex-layout.col#menu-otras-4"
+    ]
+  },
+
+  "flex-layout.col#menu-otras-1":{
+    "children": ["vtex.menu@2.x:menu#otras"]
+  },
+
+  "flex-layout.col#menu-otras-2":{
+    "children": ["vtex.menu@2.x:menu#otras-2"]
+  },
+
+  "flex-layout.col#menu-otras-3":{
+    "children": ["vtex.menu@2.x:menu#otras-3"]
+  },
+
+  "flex-layout.col#menu-otras-4":{
+    "children": ["vtex.menu@2.x:menu#otras-4"]
+  },
+  "vtex.menu@2.x:menu#otras": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#belleza-title",
+      "menu-item#cuidado-facial",
+      "menu-item#hombre-belleza",
+      "menu-item#manos-pies",
+      "menu-item#esmaltes"
+    ]
+  },
+  "menu-item#belleza-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-belleza-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "mujer-icon",
+        "viewBox": "35 5 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Belleza",
+        "text": "Belleza"
+      }
+    }
+  },
+  "menu-item#cuidado-facial": {
+    "props": {
+      "id": "menu-item-cuidado-facial",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Cuidado Facial",
+        "text": "Cuidado Facial"
+      }
+    }
+  },
+  "menu-item#hombre-belleza": {
+    "props": {
+      "id": "menu-item-hombre-belleza",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Hombre",
+        "text": "Hombre"
+      }
+    }
+  },
+  "menu-item#manos-pies": {
+    "props": {
+      "id": "menu-item-manos-pies",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Manos y Pies",
+        "text": "Manos y Pies"
+      }
+    }
+  },
+  "menu-item#esmaltes": {
+    "props": {
+      "id": "menu-item-esmaltes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Esmaltes",
+        "text": "Esmaltes 2x $2990"
+      }
+    }
+  },
+  
+  "vtex.menu@2.x:menu#otras-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#cuidado-personal-title",
+      "menu-item#cepillo-dientes",
+      "menu-item#cepillo-dientes-kids",
+      "menu-item#ortodoncia",
+      "menu-item#seda-dental",
+      "menu-item#cotonitos",
+      "menu-item#todo-cuidado-personal"
+    ]
+  },
+  "menu-item#cuidado-personal-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-cuidado-personal-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "cuidado-icon",
+        "viewBox": "40 0 80 80"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Cuidado Personal",
+        "text": "Cuidado Personal"
+      }
+    }
+  },
+  "menu-item#cepillo-dientes": {
+    "props": {
+      "id": "menu-item-cepillo-dientes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Cepillo Dientes Adulto",
+        "text": "Cepillo Dientes Adulto"
+      }
+    }
+  },
+  "menu-item#cepillo-dientes-kids": {
+    "props": {
+      "id": "menu-item-cepillo-kids",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Cepillo Dientes Kids",
+        "text": "Cepillo Dientes Kids"
+      }
+    }
+  },
+  "menu-item#ortodoncia": {
+    "props": {
+      "id": "menu-item-ortodoncia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Ortodoncia",
+        "text": "Ortodoncia"
+      }
+    }
+  },
+  "menu-item#seda-dental": {
+    "props": {
+      "id": "menu-item-seda-dental",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Seda Dental",
+        "text": "Seda Dental"
+      }
+    }
+  },
+  "menu-item#cotonitos": {
+    "props": {
+      "id": "menu-item-cotonitos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Cotonitos",
+        "text": "Cotonitos"
+      }
+    }
+  },
+  "menu-item#todo-cuidado-personal": {
+    "props": {
+      "id": "menu-item-todo-cuidado",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Cuidado Personal",
+        "text": "Todo Cuidado Personal"
+      }
     }
   },
 
+  "vtex.menu@2.x:menu#otras-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#accesorios-hombre",
+      "menu-item#anteojos",
+      "menu-item#billetera",
+      "menu-item#cinturon",      
+      "menu-item#corbata",
+      "menu-item#pulsera",
+      "menu-item#reloj",
+      "menu-item#suspensor",
+      "menu-item#todo-accesorios-hombre"
+    ]
+  },
+  "menu-item#accesorios-hombre": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-teens-hombre-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hombre-icon",
+        "viewBox": "35 5 95 95"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Accesorios Hombre",
+        "text": "Accesorios Hombre"
+      }
+    }
+  },
+  "menu-item#anteojos": {
+    "props": {
+      "id": "menu-item-anteojos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Anteojos",
+        "text": "Anteojos"
+      }
+    }
+  },
+  "menu-item#billetera": {
+    "props": {
+      "id": "menu-item-billetera",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Billetera",
+        "text": "Billetera"
+      }
+    }
+  },
+  "menu-item#cinturon": {
+    "props": {
+      "id": "menu-item-cinturon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Cinturón",
+        "text": "Cinturón"
+      }
+    }
+  },
+  "menu-item#corbata": {
+    "props": {
+      "id": "menu-item-corbata",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Corbata",
+        "text": "Corbata"
+      }
+    }
+  },
+  "menu-item#pulsera": {
+    "props": {
+      "id": "menu-item-pulsera",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Pulsera",
+        "text": "Pulsera"
+      }
+    }
+  },
+  "menu-item#reloj": {
+    "props": {
+      "id": "menu-item-reloj",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Reloj",
+        "text": "Reloj"
+      }
+    }
+  },
+  "menu-item#suspensor": {
+    "props": {
+      "id": "menu-item-suspensor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Suspensor",
+        "text": "Suspensor"
+      }
+    }
+  },
+  "menu-item#todo-accesorios-hombre": {
+    "props": {
+      "id": "menu-item-todo-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Accesorios Hombre",
+        "text": "Todo Accesorios Hombre"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#otras-4": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#dulces-title",
+      "menu-item#chocolates",
+      "menu-item#crocantes-frutos-secos",
+      "menu-item#delicias-turcas",
+      "menu-item#sin-azucar",
+      "menu-item#te-cafe",
+      "menu-item#turrones",
+      "menu-item#todo-dulces"
+    ]
+  },
+  "menu-item#dulces-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-dulces-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "hpa-login",
+        "viewBox": "0 0 24 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Dulces",
+        "text": "Dulces"
+      }
+    }
+  },
+  "menu-item#chocolates": {
+    "props": {
+      "id": "menu-item-chocolates",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Chocolates",
+        "text": "Chocolates"
+      }
+    }
+  },
+  "menu-item#crocantes-frutos-secos": {
+    "props": {
+      "id": "menu-item-crocantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "Crocantes de Frutos Secos",
+        "text": "Crocantes de Frutos Secos"
+      }
+    }
+  },
+  "menu-item#delicias-turcas": {
+    "props": {
+      "id": "menu-item-delicias-turcas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Delicias Turcas",
+        "text": "Delicias Turcas"
+      }
+    }
+  },
+  "menu-item#sin-azucar": {
+    "props": {
+      "id": "menu-item-sin-azucar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Sin Azúcar",
+        "text": "Sin Azúcar"
+      }
+    }
+  },
+  "menu-item#te-cafe": {
+    "props": {
+      "id": "menu-item-sostenes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Té y Café",
+        "text": "Té y Café"
+      }
+    }
+  },
+  "menu-item#turrones": {
+    "props": {
+      "id": "menu-item-turrones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Turrones",
+        "text": "Turrones"
+      }
+    }
+  },
+  "menu-item#todo-dulces": {
+    "props": {
+      "id": "menu-item-todo-dulces",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Todo Dulces",
+        "text": "Todo Dulces"
+      }
+    }
+  },
+ 
   "menu-item#para-ti": {
     "props": {
       "id": "menu-item-category-home",

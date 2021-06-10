@@ -41,14 +41,42 @@
   },
 
   "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+    "children": ["vtex.menu@2.x:menu#busquedas-seo"],
     "props": {
       "blockClass": "busquedas-footer"
     }
   },
-  "accepted-payment-methods": {
+  "vtex.menu@2.x:menu#busquedas-seo":{
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#calzon-maternal-busqueda",
+      "menu-item#sosten-maternal-busqueda"
+    ]
+  },
+  "menu-item#calzon-maternal-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Calzón maternal"
+      }
+    }
+  },
+  "menu-item#sosten-maternal-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Sostén maternal"
+      }
     }
   },
 
@@ -69,7 +97,10 @@
     "children": [
       "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
-    ]
+    ],
+    "props":{
+      "blockClass": "footer-mobile"
+    }
   },
   "flex-layout.row#2-footer-mobile": {
     "children": ["flex-layout.col#footer-1-mobile"],
@@ -81,8 +112,6 @@
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
       "rich-text#footer-mobile"
     ],
     "props": {
@@ -101,7 +130,7 @@
   },
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "creditos",
       "blockClass": "footer"
     }
   }

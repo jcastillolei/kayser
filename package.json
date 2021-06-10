@@ -1,0 +1,21 @@
+{
+  "name": "kayser",
+  "version": "1.0.0",
+  "description": "kayser vtex io",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "login": "vtex login kaysertest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcastillolei/kayser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcastillolei/kayser/issues"
+  },
+  "homepage": "https://github.com/jcastillolei/kayser#readme"
+}

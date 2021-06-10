@@ -109,7 +109,7 @@
       "menu-item#servicio",
       "menu-item#contactenos",
       "menu-item#quiero-ser",
-      "menu-item#como-comprar",
+      "modal-trigger#como-comprar-footer",
       "menu-item#contactanos",
       "menu-item#numero-contacto"
     ]
@@ -160,6 +160,11 @@
       }
     }
   },
+
+  "modal-trigger#como-comprar-footer":{
+    "children": ["menu-item#como-comprar", "modal-layout#como-comprar"]
+  },
+
   "menu-item#como-comprar": {
     "props": {
       "id": "menu-item-como-comprar",
@@ -168,7 +173,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/tvs",
+        "href": "",
         "noFollow": true,
         "tagTitle": "Cómo comprar",
         "text": "Cómo comprar"
@@ -210,14 +215,13 @@
     },
     "children": [
       "menu-item#redes",
-      "menu-item#fb",
-      "menu-item#ig",
+      "vtex.menu@2.x:menu#rrss-1",
       "menu-item#whatsapp",
       "menu-item#whatsapp-1",
       "menu-item#whatsapp-2"
     ]
   },
-
+  
   "menu-item#redes": {
     "props": {
       "id": "menu-item-redes",
@@ -231,6 +235,14 @@
         "text": "Redes Sociales"
       }
     }
+  },
+
+  "vtex.menu@2.x:menu#rrss-1":{
+    "props":{"orientation": "horizontal", "blockClass": "rrss-footer"},
+    "children": [
+      "menu-item#fb",
+      "menu-item#ig"
+    ]
   },
 
   "menu-item#ig": {
@@ -361,15 +373,410 @@
     }
   },
 
+
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "vtex.menu@2.x:menu#info-kayser-mobile",
+      "vtex.menu@2.x:menu#servicio-mobile",
+      "vtex.menu@2.x:menu#contactanos-mobile",
+      "vtex.menu@2.x:menu#rrss-mobile",
+      "vtex.menu@2.x:menu#whatsapp-mobile",
+      "vtex.menu@2.x:menu#catalogo-mobile",
+      "newsletter",
+      "vtex.menu@2.x:menu#busquedas-seo"
     ]
+  },
+
+  "vtex.menu@2.x:menu#info-kayser-mobile":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#info-mobile-title",
+      "menu-item#empresa-mobile",
+      "menu-item#politica-devolucion-mobile",
+      "menu-item#politica-envio-mobile",
+      "menu-item#terminos-mobile",
+      "menu-item#tiendas-mobile"
+    ]
+  },
+
+  "menu-item#info-mobile-title":{
+    "props": {
+      "id": "menu-item-footer-info",
+      "blockClass": "menu-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Información Kayser",
+        "text": "Información Kayser"
+      }
+    }
+  },
+  "menu-item#empresa-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/empresa",
+        "noFollow": true,
+        "tagTitle": "Empresa",
+        "text": "Empresa"
+      }
+    }
+  },
+  "menu-item#politica-devolucion-mobile":{
+    "props": {
+      "id": "menu-item-politica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-devolucion",
+        "noFollow": true,
+        "tagTitle": "Política de devolución",
+        "text": "Política de devolución"
+      }
+    }
+  },
+  "menu-item#politica-envio-mobile":{
+    "props": {
+      "id": "menu-item-politica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-envio",
+        "noFollow": true,
+        "tagTitle": "Política de envío",
+        "text": "Política de envío"
+      }
+    }
+  },
+  "menu-item#terminos-mobile":{
+    "props": {
+      "id": "menu-item-terminos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/terminos-condiciones",
+        "noFollow": true,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#tiendas-mobile":{
+    "props": {
+      "id": "menu-item-tiendas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Tiendas",
+        "text": "Tiendas"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#servicio-mobile":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#servicio-mobile-title",
+      "menu-item#contactenos-mobile",
+      "menu-item#promotora-mobile",
+      "modal-trigger#como-comprar-mobile"
+    ]
+  },
+
+  "menu-item#servicio-mobile-title":{
+    "props": {
+      "id": "menu-item-footer-info",
+      "blockClass": "menu-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Servicio al Cliente",
+        "text": "Servicio al Cliente"
+      }
+    }
+  },
+  "menu-item#contactenos-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Contáctenos",
+        "text": "Contáctenos"
+      }
+    }
+  },
+  "menu-item#promotora-mobile":{
+    "props": {
+      "id": "menu-item-politica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Quiero ser promotora",
+        "text": "Quiero ser promotora"
+      }
+    }
+  },
+
+  "modal-trigger#como-comprar-mobile": {
+    "children": ["menu-item#como-comprar-mobile", "modal-layout#como-comprar"]
+  },
+
+  "menu-item#como-comprar-mobile":{
+    "props": {
+      "id": "menu-item-politica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Como comprar",
+        "text": "Cómo comprar"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#contactanos-mobile":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#contactanos-mobile-title",
+      "menu-item#numero-mobile"
+    ]
+  },
+
+  "menu-item#contactanos-mobile-title":{
+    "props": {
+      "id": "menu-item-footer-info",
+      "blockClass": "menu-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
+      }
+    }
+  },
+  "menu-item#numero-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "numero",
+        "text": "(+56) 2- 32106660"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#rrss-mobile":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#rrss-mobile-title",
+      "menu-item#fb-mobile",
+      "menu-item#ig-mobile"
+    ]
+  },
+
+  "menu-item#rrss-mobile-title":{
+    "props": {
+      "id": "menu-item-footer-info",
+      "blockClass": "menu-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Redes Sociales",
+        "text": "Redes Sociales"
+      }
+    }
+  },
+  "menu-item#fb-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "icon-fb",
+        "viewBox": "-4 0 24 20"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.facebook.com/kaysercl/",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#ig-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "icon-ig",
+        "viewBox": "0 0 24 20"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.instagram.com/kayser_chile/?hl=es-la",
+        "noFollow": true
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#whatsapp-mobile":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#whatsapp-mobile-title",
+      "menu-item#wsp-cliente-mobile",
+      "menu-item#wsp-promotora-mobile"
+    ]
+  },
+
+  "menu-item#whatsapp-mobile-title":{
+    "props": {
+      "id": "menu-item-footer-info",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-title",
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Whatsapp",
+        "text": "Whatsapp"
+      }
+    }
+  },
+  "menu-item#wsp-cliente-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "icon-wsp",
+        "viewBox": "0 0 27 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send?phone=56940883516&text=Hola!%20Quiero%20consultar%20desde%20la%20web!  ",
+        "noFollow": true,
+        "tagTitle": "Servicio al cliente",
+        "text": "Servicio al cliente"
+      }
+    }
+  },
+  "menu-item#wsp-promotora-mobile":{
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "icon-wsp",
+        "viewBox": "0 0 27 16"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send?phone=56977678755&text=Hola!%20Quiero%20consultar%20desde%20la%20web!",
+        "noFollow": true,
+        "tagTitle": "Promotora",
+        "text": "Promotora"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#catalogo-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#catalogo-digital-mobile",
+      "image#catalogo-mobile"
+    ]
+  },
+  "image#catalogo-mobile": {
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/catalogo-footer-otonoinvierno-2020-2021.jpg",
+      "maxHeight": 154,
+      "blockClass": "img-catalogo",
+      "link":{
+        "url": "/catalogo"
+      }
+    }
+  },
+
+  "menu-item#catalogo-digital-mobile": {
+    "props": {
+      "id": "menu-item-catalogo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-title-catalogo",
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Catálogo digital",
+        "text": "Catálogo Digital"
+      }
+    }
   },
 
   "menu-item#clothing-mobile": {

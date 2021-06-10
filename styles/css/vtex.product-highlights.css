@@ -5,8 +5,9 @@
   width: 200px;
 }
 
-.productHighlightText {
-  background: antiquewhite;
-  border-radius: 20px;
+.productHighlightText { 
+  display: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
   padding: 5px 10px;
 }

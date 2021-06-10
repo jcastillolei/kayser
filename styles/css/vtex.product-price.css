@@ -4,6 +4,17 @@
   font-size: 1rem;
 }
 
+:global(.vtex-product-summary-2-x-element)
+.listPrice{
+  padding-left: 1rem;
+}
+
+:global(.vtex-product-summary-2-x-element)
+.sellingPriceValue {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .sellingPrice {
   color: #3f3f40;
   font-size: 1.25rem;

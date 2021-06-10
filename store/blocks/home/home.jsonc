@@ -4,9 +4,13 @@
       "list-context.image-list#carousel-main",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-       "flex-layout.row#row-xxl",
-       "rich-text#shelf-title-recomendados",
-      "flex-layout.row#shelf-recomendados"
+      "flex-layout.row#row-xxl",
+      "flex-layout.row#mini-banners-1",
+      "flex-layout.row#mini-banners-2",
+      "flex-layout.row#banner-1",
+      "rich-text#shelf-title-recomendados",
+      "flex-layout.row#shelf-recomendados",
+      "flex-layout.row#como-comprar"
     ]
   },
 
@@ -18,15 +22,15 @@
       "images": [
         {
           "image": "/arquivos/landing2.png",
-          "mobileImage": "/arquivos/landing2.png"
+          "mobileImage": "https://kayserltda.vteximg.com.br/arquivos/PPAL-kdays-sostenes-mobile.png?v=637581276073070000"
         },
         {
           "image": "/arquivos/landing3.png",
-          "mobileImage": "/arquivos/landing3.png"
+          "mobileImage": "https://kayserltda.vteximg.com.br/arquivos/PPAL-kdays-sostenes-mobile.png?v=637581276073070000"
         },
         {
           "image": "/arquivos/landing4.png",
-          "mobileImage": "/arquivos/landing4.png"
+          "mobileImage": "https://kayserltda.vteximg.com.br/arquivos/PPAL-kdays-sostenes-mobile.png?v=637581276073070000"
         }
       ]
     }
@@ -75,7 +79,7 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
@@ -118,7 +122,7 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
@@ -128,31 +132,134 @@
     }
   },
 
-  "info-card#home": {
+  "flex-layout.row#mini-banners-1":{
+    "children": ["image#mini-banner-1", "image#mini-banner-2"],
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "marginTop": 7,
+      "blockClass": "mini-banners"
     }
   },
 
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+  "image#mini-banner-1":{
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/Banner-mujer-900x480-Desktop.png",
+      "blockClass": "mini-banner-1",
+      "link":{
+        "url": "#"
+      }
     }
   },
 
-  "rich-text#link": {
+  "image#mini-banner-2":{
+    "props":{
+      "src": "https://www.kaysershop.com/arquivos/Banner-hombre-900x480-Desktop.png",
+      "blockClass": "mini-banner-2",
+      "link":{
+        "url": "#"
+      }
+    }
+  },
+
+
+  "flex-layout.row#mini-banners-2":{
+    "children": ["image#mini-banner-3", "image#mini-banner-4"],
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "marginTop": 7,
+      "marginBottom": 7,
+      "blockClass": "mini-banners"
+    }
+  },
+
+  "image#mini-banner-3":{
+    "props":{
+      "src": "https://www.kaysershop.com/arquivos/Banner-teens-900x480-Desktop.png",
+      "blockClass": "mini-banner-3",
+      "link":{
+        "url": "#"
+      }
+    }
+  },
+
+  "image#mini-banner-4":{
+    "props":{
+      "src": "https://www.kaysershop.com/arquivos/Banner-kids-900x480-Desktop.png",
+      "blockClass": "mini-banner-4",
+      "link":{
+        "url": "#"
+      }
+    }
+  },
+
+  "flex-layout.row#banner-1":{
+    "children": ["image#banner-1"],
+    "props":{
+      "marginTop": 7,
+      "marginBottom": 7
+    }
+  },
+
+  "image#banner-1":{
+    "props":{
+      "src": "https://www.kaysershop.com/arquivos/kayser_packs1440x200_sinlogos.png?v=637396884761830000",
+      "blockClass": "banner-home",
+      "link":{
+        "url": "#"
+      }
+    }
+  },
+
+  "flex-layout.row#como-comprar":{
+    "children": ["modal-trigger#como-comprar"],
+    "props": {
+      "marginBottom": 8,
+      "marginTop": 4
+    }
+  },
+  "modal-trigger#como-comprar": {
+    "children": [
+      "image#como-comprar",
+      "modal-layout#como-comprar"
+    ]
+  },
+  "modal-layout#como-comprar": {
+    "children": [
+      "modal-header#como-comprar",
+      "image#logo-kayser",
+      "rich-text#como-comprar",
+      "iframe#como-comprar"
+    ],
+    "props":{
+      "blockClass": "modal-como-comprar"
+    }
+  },
+  "modal-header#como-comprar":{
+    "props": {
+      "showCloseButton": true
+    }
+  },
+  "rich-text#como-comprar": {
+    "props": {
+      "text": "## ¿Cómo comprar en Kaysershop.com?"
+    }
+  },
+  "image#logo-kayser":{
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/logo.png",
+      "maxHeight": 45,
+      "maxWidth": 105
+    }
+  },
+  "iframe#como-comprar": {
+    "props": {
+      "src": "https://www.youtube.com/embed/3NOLO1j-_0Y",
+      "width": "560",
+      "height": "315"
+    }
+  },
+  "image#como-comprar": {
+    "props":{
+      "src": "https://kayserltda.vteximg.com.br/arquivos/banner_kayser_comocomprar%201440_100_desktop.png?v=637338958745800000",
+      "blockClass": "img-como-comprar"
     }
   }
 }
