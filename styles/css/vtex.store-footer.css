@@ -165,7 +165,9 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
 :global(.vtex-menu-2-x-styledLinkContainer){
   margin-left: 0px;
-  margin-right: 0px;  
+  margin-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
@@ -178,6 +180,12 @@
   justify-content: start;
   padding: .5rem .7rem;
 }
+
+:global(.vtex-flex-layout-0-x-flexRowContent--busquedas-footer)
+:global(.vtex-menu-2-x-menuContainerNav){
+  padding: 2.5rem 0;
+}
+
 
 .row--payment-methods {
   padding-top: 16px;
@@ -236,6 +244,12 @@
 }
 
 /* footer mobile: newsletter */
+.footerLayout--footer-mobile
+:global(.vtex-store-components-3-x-newsletter)
+:global(.vtex-store-components-3-x-container) {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 .footerLayout--footer-mobile
 :global(.vtex-store-components-3-x-label){
   color: #666;
@@ -306,4 +320,44 @@
 .footerLayout--footer-mobile
 :global(.vtex-store-components-3-x-inputGroup){
   padding-top: .4rem;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainerNav--busquedas-footer){
+  border-top: 1px solid #2a86e4;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainer--busquedas-footer){
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainer--busquedas-footer)
+:global(.vtex-menu-2-x-menuItem){
+  border-bottom: none;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainer--busquedas-footer)
+:global(.vtex-menu-2-x-menuItem)
+:global(.vtex-menu-2-x-styledLinkContent){
+  padding: .2rem 0;
+}
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainer--busquedas-footer)
+:global(.vtex-menu-2-x-menuItem)
+:global(.vtex-menu-2-x-styledLinkContainer){
+  margin-left: .2rem;
+  margin-right: .2rem;
+}
+
+.footerLayout--footer-mobile
+:global(.vtex-menu-2-x-menuContainer--busquedas-footer)
+:global(.vtex-menu-2-x-menuItem)
+:global(.vtex-menu-2-x-styledLinkContent)::after{
+  content: '-';
+  margin-left: .4rem;
 }

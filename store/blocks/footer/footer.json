@@ -48,11 +48,21 @@
   },
   "vtex.menu@2.x:menu#busquedas-seo":{
     "props": {
-      "orientation": "horizontal"
+      "orientation": "horizontal",
+      "blockClass": "busquedas-footer"
     },
     "children": [
       "menu-item#calzon-maternal-busqueda",
-      "menu-item#sosten-maternal-busqueda"
+      "menu-item#sosten-maternal-busqueda",
+      "menu-item#boxer-busqueda",
+      "menu-item#colaless-busqueda",
+      "menu-item#pijama-mujer-busqueda",
+      "menu-item#pantaletas-mujer-busqueda",
+      "menu-item#sostenes-mujer-busqueda",
+      "menu-item#calzones-ninas-busqueda",
+      "menu-item#calcetines-hombre-busqueda",
+      "menu-item#ropa-interior-kids-hombre-busqueda",
+      "menu-item#camisola-busqueda"
     ]
   },
   "menu-item#calzon-maternal-busqueda": {
@@ -76,6 +86,114 @@
       "itemProps": {
         "tagTitle": "Busquedas",
         "text": "Sostén maternal"
+      }
+    }
+  },
+  "menu-item#boxer-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Boxer"
+      }
+    }
+  },
+  "menu-item#colaless-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Colaless"
+      }
+    }
+  },
+  "menu-item#pijama-mujer-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Pijama mujer"
+      }
+    }
+  },
+  "menu-item#pantaletas-mujer-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Pantaletas mujer"
+      }
+    }
+  },
+  "menu-item#sostenes-mujer-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Sostenes de mujer"
+      }
+    }
+  },
+  "menu-item#calzones-ninas-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Calzones de niñas"
+      }
+    }
+  },
+  "menu-item#calcetines-hombre-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Calceintes de hombre"
+      }
+    }
+  },
+  "menu-item#ropa-interior-kids-hombre-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Ropa interior kids hombre"
+      }
+    }
+  },
+  "menu-item#camisola-busqueda": {
+    "props": {
+      "id": "menu-item-busqueda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "tagTitle": "Busquedas",
+        "text": "Camisola"
       }
     }
   },
