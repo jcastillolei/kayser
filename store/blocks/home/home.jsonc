@@ -1,18 +1,97 @@
 {
   "store.home": {
     "blocks": [
+      //"my-component-add",
       "list-context.image-list#carousel-main",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#row-xxl",
+    
+      "flex-layout.row#row-xxl", //Carrusel debajo del banner de imagenes
       "flex-layout.row#mini-banners-1",
       "flex-layout.row#mini-banners-2",
-      "flex-layout.row#banner-1",
-      "rich-text#shelf-title-recomendados",
+     // "flex-layout.row#banner-1",
+      //"rich-text#shelf-title-recomendados",
       "flex-layout.row#shelf-recomendados",
       "flex-layout.row#como-comprar"
+     
     ]
   },
+//Mostrar componente dentro de carro de compras
+
+  "minicart.v2": {
+   
+    "children": ["minicart-base-content"]
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "size": 24
+    }
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": ["minicart-summary#prueba", "minicart-checkout-button"]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"]
+  },
+  "product-list#minicart": {
+    "blocks": ["product-list-content-mobile"]
+  },
+  "minicart-summary#prueba": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"]/*,
+    "props": {
+      "totalizersToShow": ["Items"]
+    }*/
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "icon-cart#minicart-empty-state",
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+  "icon-cart#minicart-empty-state": {
+    "props": {
+      "size": 64,
+      "blockClass": "minicart-empty-state"
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Your cart is empty."
+    }
+  },
+
+
 
 
   "list-context.image-list#carousel-main": {
@@ -57,12 +136,13 @@
     }
   },
 
+  /*
   "rich-text#shelf-title-recomendados": {
     "props": {
       "text": "## Productos Recomendados",
       "blockClass": "shelfTitle"
     }
-  },
+  }, */
 
   "flex-layout.row#shelf-recomendados": {
     "children": ["list-context.product-list#productos-recomendados"]
@@ -261,5 +341,13 @@
       "src": "https://kayserltda.vteximg.com.br/arquivos/banner_kayser_comocomprar%201440_100_desktop.png?v=637338958745800000",
       "blockClass": "img-como-comprar"
     }
+  },
+
+  "my-component-add":{
+    
+    }
+
   }
-}
+
+  
+
