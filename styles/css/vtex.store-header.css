@@ -135,11 +135,14 @@
 :global(.vtex-store-components-3-x-searchBarContainer)
 :global(.vtex-input-prefix__group)
 :global(.vtex-input__suffix)
-:global(.vtex-store-components-3-x-searchIcon){
+:global(.vtex-store-components-3-x-searchIcon),
+:global(.vtex-store-components-3-x-searchBarContainer)
+:global(.vtex-input-prefix__group)
+:global(.vtex-input__suffix)
+:global(.vtex-store-components-3-x-closeIcon){
   color: white;
   width: 12px;
 }
-
 
 /* i c o n  c a r t */
 :global(.vtex-flex-layout-0-x-flexRow--navbar)

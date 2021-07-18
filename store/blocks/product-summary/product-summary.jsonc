@@ -28,7 +28,11 @@
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
-      "aspectRatio": "7:10"
+      "aspectRatio": "7:10",
+      "hoverImage":{
+        "criteria": "index",
+        "index": 1
+      }
     }
   },
 

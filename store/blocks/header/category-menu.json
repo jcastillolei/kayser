@@ -50,7 +50,10 @@
       "width": "100%"
     },
     "children": [
-      "flex-layout.row#menu-mujer"
+      "flex-layout.row#menu-mujer",
+      "flex-layout.row#menu-mujer-2",
+      "flex-layout.row#boton-mujer",
+      "flex-layout.row#image-mujer"
     ]
   },
   "flex-layout.row#menu-mujer":{
@@ -60,6 +63,19 @@
       "flex-layout.col#menu-mujer-3",
       "flex-layout.col#menu-mujer-4",
       "flex-layout.col#menu-mujer-5"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#menu-mujer-2":{
+    "children":[
+      "flex-layout.col#menu-mujer-6",
+      "flex-layout.col#menu-mujer-7",
+      "flex-layout.col#menu-mujer-8",
+      "flex-layout.col#menu-mujer-9",
+      "flex-layout.col#menu-mujer-10"
     ],
     "props": {
       "width": "100%"
@@ -86,6 +102,26 @@
     "children": ["vtex.menu@2.x:menu#mujer-5"]
   },
 
+  "flex-layout.col#menu-mujer-6":{
+    "children": ["vtex.menu@2.x:menu#mujer-6"]
+  },
+
+  "flex-layout.col#menu-mujer-7":{
+    "children": ["vtex.menu@2.x:menu#mujer-7"]
+  },
+
+  "flex-layout.col#menu-mujer-8":{
+    "children": ["vtex.menu@2.x:menu#mujer-8"]
+  },
+
+  "flex-layout.col#menu-mujer-9":{
+    "children": ["vtex.menu@2.x:menu#mujer-9"]
+  },
+
+  "flex-layout.col#menu-mujer-10":{
+    "children": ["vtex.menu@2.x:menu#mujer-10"]
+  },
+
   "vtex.menu@2.x:menu#mujer": {
     "props": {
       "orientation": "vertical"
@@ -100,7 +136,14 @@
       "menu-item#strapless",
       "menu-item#tull",
       "menu-item#jacquard",
-      "menu-item#todo-sosten",
+      "menu-item#todo-sosten"
+    ]
+  },
+  "vtex.menu@2.x:menu#mujer-6": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
       "menu-item#linea-maternal-title",
       "menu-item#sosten",
       "menu-item#calzon",
@@ -340,13 +383,22 @@
       "menu-item#hi-leggs",
       "menu-item#maxi",
       "menu-item#pantaletas",
-      "menu-item#todo-calzon",
+      "menu-item#todo-calzon"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#mujer-7": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
       "menu-item#linea-control-title",
       "menu-item#calzon-2",
       "menu-item#camiseta",
       "menu-item#todo-control"
     ]
   },
+
   "menu-item#calzon-title": {
     "props": {
       "blockClass": "header-title",
@@ -550,7 +602,15 @@
       "menu-item#camisola",
       "menu-item#batas-mujer",
       "menu-item#pantuflas",
-      "menu-item#todo-pijamas-mujer",
+      "menu-item#todo-pijamas-mujer"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#mujer-8": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
       "menu-item#camisetas-mujer-title",
       "menu-item#manga-larga-mujer",
       "menu-item#termica",
@@ -558,6 +618,7 @@
       "menu-item#todo-camisetas-mujer"
     ]
   },
+
   "menu-item#pijamas-batas-title": {
     "props": {
       "blockClass": "header-title",
@@ -778,13 +839,22 @@
       "menu-item#cobre-mujer",
       "menu-item#mini-medias-mujer",
       "menu-item#pantys-lisas-mujer",
-      "menu-item#todo-calcetines-mujer",
+      "menu-item#todo-calcetines-mujer"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#mujer-9": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
       "image#love-lust",
       "menu-item#body-mujer",
       "menu-item#bandas-mujer",
       "menu-item#todo-love-lust"
     ]
   },
+
   "menu-item#calcetines-pantys-title": {
     "props": {
       "blockClass": "header-title",
@@ -1101,7 +1171,102 @@
       }
     }
   },
+  "vtex.menu@2.x:menu#mujer-10": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#homewear-mujer-title",
+      "menu-item#pantalon-homewear-mujer",
+      "menu-item#poleron-homewear-mujer",
+      "menu-item#todo-homewear-mujer"
+    ]
+  },
+  "menu-item#homewear-mujer-title": {
+    "props": {
+      "blockClass": "header-title",
+      "id": "menu-item-accesorios-title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps":{
+        "id": "calzon-icon",
+        "viewBox": "0 0 130 75"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Homewear",
+        "text": "Homewear"
+      }
+    }
+  },
+  "menu-item#pantalon-homewear-mujer": {
+    "props": {
+      "id": "menu-item-todo-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Pantalon",
+        "text": "Pantalón"
+      }
+    }
+  },
+  "menu-item#poleron-homewear-mujer": {
+    "props": {
+      "id": "menu-item-todo-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Poleron",
+        "text": "Polerón"
+      }
+    }
+  },
+  "menu-item#todo-homewear-mujer": {
+    "props": {
+      "id": "menu-item-todo-accesorios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Todo Homewear",
+        "text": "Todo Homewear"
+      }
+    }
+  },
+  "flex-layout.row#boton-mujer":{
+    "children": ["rich-text#ver-mujer"]
+  },
+  "rich-text#ver-mujer":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Todo Mujer](https://help.vtex.com/en/faq/what-is-vtex-io)",
+      "blockClass": "btn-more"
+    }
+  },
 
+  "flex-layout.row#image-mujer":{
+    "children": ["image#banner-mujer"]
+  },
+  "image#banner-mujer":{
+    "props": {
+      "src": "https://kayserltda.vteximg.com.br/arquivos/subs_mujer.png"
+    }
+  },
 
   "menu-item#hombre": {
     "props": {
@@ -1126,7 +1291,9 @@
       "width": "100%"
     },
     "children": [
-      "flex-layout.row#menu-hombre"
+      "flex-layout.row#menu-hombre",
+      "flex-layout.row#boton-hombre",
+      "flex-layout.row#image-hombre"
     ]
   },
   "flex-layout.row#menu-hombre": {
@@ -1687,7 +1854,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "[Todo hombre](https://help.vtex.com/en/faq/what-is-vtex-io)",
+      "text": "[Todo Hombre](https://help.vtex.com/en/faq/what-is-vtex-io)",
       "blockClass": "btn-more"
     }
   },
@@ -1700,6 +1867,7 @@
       "src": "https://kayserltda.vteximg.com.br/arquivos/subs_hombre.png?v=637499057190000000"
     }
   },
+
 
   "menu-item#kids": {
     "props": {
@@ -1724,7 +1892,9 @@
       "width": "100%"
     },
     "children": [
-      "flex-layout.row#menu-kids"
+      "flex-layout.row#menu-kids",
+      "flex-layout.row#boton-kids",
+      "flex-layout.row#image-kids"
     ]
   },
   "flex-layout.row#menu-kids":{
@@ -2327,7 +2497,26 @@
       }
     }
   },
+  "flex-layout.row#boton-kids":{
+    "children": ["rich-text#ver-kids"]
+  },
+  "rich-text#ver-kids":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Todo Teen and Kids](https://help.vtex.com/en/faq/what-is-vtex-io)",
+      "blockClass": "btn-more"
+    }
+  },
 
+  "flex-layout.row#image-kids":{
+    "children": ["image#banner-kids"]
+  },
+  "image#banner-kids":{
+    "props": {
+      "src": "https://kayserltda.vteximg.com.br/arquivos/subs_teen_kids.png"
+    }
+  },
 
   "menu-item#otras": {
     "props": {

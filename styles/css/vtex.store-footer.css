@@ -361,3 +361,12 @@
   content: '-';
   margin-left: .4rem;
 }
+
+/* LOGOS FOOTER */
+:global(.vtex-flex-layout-0-x-flexRow--credits){
+  padding: 2rem 0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--credits)
+:global(.vtex-flex-layout-0-x-flexRowContent--credits){
+  align-items: center;
+}

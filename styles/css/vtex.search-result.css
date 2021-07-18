@@ -24,3 +24,170 @@
 .galleryItem--normal{
   position: relative;
 }
+
+/* ORDER BY */
+.orderBy--layout .filterPopupTitle{
+  font-family: 'Raleway', sans-serif;
+  
+  text-transform: capitalize;
+}
+
+.orderBy--layout .filterPopupTitle .orderByText{
+  color: #4d4d4d;
+  font-weight: bold;
+}
+.orderByOptionsContainer{
+  border: 1px solid rgba(204, 204, 204, 0.9);
+}
+.orderByOptionsContainer
+.orderByOptionItem{
+  font-family: 'Raleway', sans-serif;
+  font-size: .8rem;
+}
+
+/* FILTER */
+.filtersWrapper{
+  font-family: 'Raleway', sans-serif;
+}
+
+.filterMessage{
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.filterTitle{
+  color: #4d4d4d;
+  font-size: .9rem ;
+  font-weight: bold;
+}
+
+.filterItem
+:global(.vtex-checkbox__label){
+  font-size: .85rem;
+}
+
+.filterItem
+:global(.vtex-checkbox__line-container){
+  align-items: center;
+}
+.filter__container--priceRange
+:global(.vtex-slider__base-internal),
+.filter__container--priceRange
+:global(.vtex-slider__selector){
+  background-color: #2a86e4;
+}
+.filter__container--priceRange
+:global(.vtex-slider__left-value),
+.filter__container--priceRange
+:global(.vtex-slider__right-value){
+  font-family: 'Raleway', sans-serif;
+  font-size: .7rem;
+}
+.filter__container--title{
+  border: none;
+}
+
+/* BREADCRUMB */
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb)
+:global(.vtex-breadcrumb-1-x-homeLink),
+:global(.vtex-breadcrumb-1-x-arrow--1)
+:global(.vtex-breadcrumb-1-x-caretIcon){
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb)
+:global(.vtex-breadcrumb-1-x-link){
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: .85rem;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb)
+:global(.vtex-breadcrumb-1-x-container){
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+/*VITRINAS SEARCH*/
+.gallery{
+  justify-content: center;
+}
+.gallery
+.galleryItem{
+  padding: 0 .75rem .75rem;
+}
+.gallery
+:global(.vtex-product-summary-2-x-element){
+  background-color: #f2f2f2;
+  border: 1px solid rgba(204, 204, 204, 0.9);
+  font-family: 'Raleway', sans-serif;
+  padding-top: 0;
+}
+
+.gallery
+:global(.vtex-product-summary-2-x-image){
+  border-radius: 0;
+}
+
+.gallery
+:global(.vtex-product-summary-2-x-productBrand){
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: .8rem;
+  color: #525252;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.gallery
+:global(.vtex-product-price-1-x-listPriceValue)
+:global(.vtex-product-price-1-x-currencyContainer){
+  color: #999;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.gallery
+:global(.vtex-product-price-1-x-sellingPriceValue){
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.gallery
+:global(.vtex-button){
+  width: 90%;
+  margin: 0 auto;
+  background-color: #2a86e4;
+  border: none;
+  min-height: 1.81rem;
+}
+.gallery
+:global(.vtex-button)
+:global(.vtex-button__label){
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: .8rem;
+}
+
+/* BOTÓN MOSTRAR MÁS */
+.buttonShowMore--layout{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.buttonShowMore--layout
+:global(.vtex-button){
+  border: none;
+  background-color: #2a86e4;
+}
+
+.buttonShowMore--layout
+:global(.vtex-button)
+:global(.vtex-button__label){
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}

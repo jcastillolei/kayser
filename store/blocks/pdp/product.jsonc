@@ -153,10 +153,16 @@
   
   "modal-layout#guia-tallas": {
     "children": [
+      "modal-header#header-tallas",
       "image#img-tallas"
     ],
     "props": {
       "blockClass": "guia_modal"
+    }
+  },
+  "modal-header#header-tallas":{
+    "props":{
+      "blockClass": "header-tallas"
     }
   },
   "image#img-tallas":{

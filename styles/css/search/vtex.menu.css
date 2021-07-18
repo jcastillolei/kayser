@@ -16,6 +16,26 @@
     align-self: start;
 }
 
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar) 
+.submenuWrapper--isOpen
+.submenu{
+    flex-flow: wrap;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--navbar) 
+.submenuWrapper--isOpen
+.submenu
+:global(.vtex-rich-text-0-x-link--btn-more){
+    background: #2a86e4;
+    color: white;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+}
+
 /* submenú para desktop */
 @media(min-width: 991px){
     .submenuContainer

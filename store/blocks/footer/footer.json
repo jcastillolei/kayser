@@ -199,15 +199,42 @@
   },
 
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+    "children": ["image#footerccs", "image#footercomprasegura", "image#footervtex", "image#footerpropulsow"],
     "props": {
       "blockClass": "credits"
     }
   },
-  "rich-text#footer": {
+  "image#footerccs": {
     "props": {
-      "text": "créditos aqui",
-      "blockClass": "footer"
+      "src": "/arquivos/ccs.svg",
+      "blockClass": "footer",
+      "width": 44,
+      "height": 61.94
+    }
+  },
+
+  "image#footercomprasegura": {
+    "props": {
+      "src": "/arquivos/comprasegura.svg",
+      "blockClass": "footer",
+      "width": 110,
+      "height": 40.44
+    }
+  },
+  "image#footervtex": {
+    "props": {
+      "src": "/arquivos/vtex.svg",
+      "blockClass": "footer",
+      "width": 60,
+      "height": 21.86
+    }
+  },
+  "image#footerpropulsow": {
+    "props": {
+      "src": "/arquivos/propulsow.svg",
+      "blockClass": "footer",
+      "width": 107,
+      "height": 35.34
     }
   },
 

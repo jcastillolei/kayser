@@ -142,7 +142,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000C8F/es-PE/images/logo/logo.png",
+      "url": "/arquivos/logo.svg",
       "width": "110"
     }
   },

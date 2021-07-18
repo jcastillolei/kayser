@@ -77,7 +77,7 @@
   "slider-layout#productos-recomendados": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 5,
         "tablet": 3,
         "phone": 2
       },
@@ -106,7 +106,7 @@
   "flex-layout.row#shelf-xxl": {
     "children": ["list-context.product-list#productos-xxl"],
     "props":{ 
-      "width": "80%",
+      "width": "82%",
       "blockClass": "xxl-vitrina"
     }
   },
