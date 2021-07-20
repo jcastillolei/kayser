@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      //"my-component-add",
       "list-context.image-list#carousel-main",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -341,11 +340,7 @@
       "src": "https://kayserltda.vteximg.com.br/arquivos/banner_kayser_comocomprar%201440_100_desktop.png?v=637338958745800000",
       "blockClass": "img-como-comprar"
     }
-  },
-
-  "my-component-add":{
-    
-    }
+  }
 
   }
 

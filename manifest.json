@@ -63,8 +63,7 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.iframe": "0.x",
-    "vtex.condition-layout": "2.x",
-    "kaysertest.componente-carreto": "0.x"
+    "vtex.condition-layout": "2.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
