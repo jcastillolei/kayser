@@ -194,7 +194,8 @@
     "children": ["image#banner-1"],
     "props":{
       "marginTop": 7,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass": "banner-home"
     }
   },
 
